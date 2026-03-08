@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Build Bright Software Solution | Innovative Systems</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Build<span>Bright</span></div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Systems</a></li>
+            <li><a href="#tech-stack">Tech</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="home">
+        <div class="hero-content">
+            <div class="badge">Systems Architecture & Development</div>
+            <h1>Build <span>Bright</span> Software Solution</h1>
+            <p>Providing high-end digital solutions for local government units and modern businesses. Specializing in secure, scalable, and automated system infrastructures.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn">Our Portfolio</a>
+                <a href="#contact" class="btn-outline">Consult Now</a>
+            </div>
+        </div>
+    </header>
+
+    <section id="projects">
+        <h2 class="section-title">Developed Systems</h2>
+        <div class="project-grid">
+            
+            <div class="project-card">
+                <div class="status live">LIVE</div>
+                <div class="icon"><i class="fas fa-id-card"></i></div>
+                <h3>Dagupan One ID</h3>
+                <p>A centralized city-wide identification system with real-time verification capabilities.</p>
+                <ul class="features">
+                    <li><i class="fas fa-check"></i> QR Code Verification</li>
+                    <li><i class="fas fa-check"></i> Integrated Scanner API</li>
+                    <li><i class="fas fa-check"></i> Centralized Resident Database</li>
+                </ul>
+                <div class="tags">
+                    <span class="tag">Laravel</span><span class="tag">MySQL</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="status dev">IN DEV</div>
+                <div class="icon"><i class="fas fa-users-cog"></i></div>
+                <h3>BIRTS</h3>
+                <p>Barangay Inhabitant Registration and Transaction System for efficient local governance.</p>
+                <ul class="features">
+                    <li><i class="fas fa-check"></i> Official Registry Management</li>
+                    <li><i class="fas fa-check"></i> Automated Certification</li>
+                    <li><i class="fas fa-check"></i> Official Family Module</li>
+                </ul>
+                <div class="tags">
+                    <span class="tag">PHP</span><span class="tag">System Design</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="status live">LIVE</div>
+                <div class="icon"><i class="fas fa-vote-yea"></i></div>
+                <h3>Electoral Management</h3>
+                <p>Advanced voter database management and automated data conversion tools.</p>
+                <ul class="features">
+                    <li><i class="fas fa-check"></i> Voter Data Processing</li>
+                    <li><i class="fas fa-check"></i> PDF-to-Excel Automation</li>
+                    <li><i class="fas fa-check"></i> Analytical Reporting</li>
+                </ul>
+                <div class="tags">
+                    <span class="tag">Automation</span><span class="tag">Data Management</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="status dev">IN DEV</div>
+                <div class="icon"><i class="fas fa-bell-slash"></i></div>
+                <h3>Silent Alarm System</h3>
+                <p>Cloud-based security solution for business owners with instant notification alerts.</p>
+                <ul class="features">
+                    <li><i class="fas fa-check"></i> Twilio API Integration</li>
+                    <li><i class="fas fa-check"></i> Real-time Dashboard</li>
+                    <li><i class="fas fa-check"></i> Secure Master Key Auth</li>
+                </ul>
+                <div class="tags">
+                    <span class="tag">Security</span><span class="tag">Laravel</span>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="tech-stack">
+        <h2 class="section-title">Core Expertise</h2>
+        <div class="tech-grid">
+            <div class="tech-item"><i class="fab fa-laravel"></i><span>Laravel</span></div>
+            <div class="tech-item"><i class="fab fa-php"></i><span>PHP</span></div>
+            <div class="tech-item"><i class="fas fa-database"></i><span>MySQL</span></div>
+            <div class="tech-item"><i class="fas fa-code"></i><span>System Architecture</span></div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="contact-container">
+            <h2>Let's Build Something Great</h2>
+            <p>Inquire about custom system development or technical consultation.</p>
+            <form action="contact.php" method="POST" class="contact-form">
+                <div class="form-row">
+                    <input type="text" name="name" placeholder="Full Name" required>
+                    <input type="email" name="email" placeholder="Email Address" required>
+                </div>
+                <select name="interest" required>
+                    <option value="" disabled selected>System Interest</option>
+                    <option value="LGU / Barangay Systems">LGU / Barangay Systems</option>
+                    <option value="Security & Alarm Systems">Security & Alarm Systems</option>
+                    <option value="Data Processing / Automation">Data Processing / Automation</option>
+                    <option value="Custom Web Application">Custom Web Application</option>
+                </select>
+                <textarea name="message" rows="5" placeholder="Tell us about your project requirements..." required></textarea>
+                <button type="submit" class="btn">Send Inquiry</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-info">
+                <p>&copy; 2026 <strong>Build Bright Software Solution</strong></p>
+                <p><i class="fas fa-map-marker-alt"></i> Dagupan City, PH</p>
+                <p><i class="fas fa-phone"></i> 09239036497</p>
+                <p><i class="fas fa-envelope"></i> ryancastaneda@rocketmail.com</p>
+            </div>
+            <div class="socials">
+                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
