@@ -1,4 +1,6 @@
 /* Modern Tech Theme Variables */
+/* fqfzubjpynddakvh */
+
 :root {
     --bg-color: #0b0e14;
     --card-bg: #161b22;
@@ -328,4 +330,54 @@ footer {
     .form-row { grid-template-columns: 1fr; }
     footer { flex-direction: column; gap: 20px; text-align: center; }
     .hero-content h1 { font-size: 2.5rem; }
+}
+
+/* Modal Overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(11, 14, 20, 0.85);
+    backdrop-filter: blur(8px);
+    display: none; /* Hidden by default */
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+
+/* Modal Box */
+.modal-content {
+    background: var(--card-bg);
+    padding: 40px;
+    border-radius: 15px;
+    border: 1px solid var(--primary-color);
+    text-align: center;
+    max-width: 450px;
+    width: 90%;
+    box-shadow: 0 0 30px var(--accent-glow);
+    animation: modalSlideUp 0.4s ease;
+}
+
+.modal-icon {
+    font-size: 4rem;
+    color: #2ed573; /* Success Green */
+    margin-bottom: 20px;
+}
+
+.modal-content h2 {
+    margin-bottom: 15px;
+    color: #fff;
+}
+
+.modal-content p {
+    color: #8b949e;
+    margin-bottom: 25px;
+}
+
+/* Animation */
+@keyframes modalSlideUp {
+    from { transform: translateY(50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
 }
