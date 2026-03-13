@@ -6,12 +6,122 @@
     <title>Build Bright Software Solution | Innovative Systems</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    
+    <style>
+        /* --- MOBILE & NAVIGATION FIXES --- */
+        
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 5%;
+            position: fixed; /* Fixed stays on top of content */
+            width: 100%;
+            top: 0;
+            left: 0;
+            background: rgba(10, 15, 25, 0.95); /* Dark theme to match your image */
+            backdrop-filter: blur(10px);
+            z-index: 2000;
+            box-sizing: border-box;
+            border-bottom: 1px solid rgba(0, 212, 255, 0.1);
+        }
+
+        /* Fix invisible text: Force links to be visible */
+        nav ul li a {
+            color: #ffffff !important; 
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.95rem;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #00d4ff !important;
+        }
+
+        /* Hamburger Icon (Hidden on Desktop) */
+        .menu-toggle {
+            display: none;
+            color: white;
+            font-size: 1.5rem;
+            cursor: pointer;
+        }
+
+        /* Hero Section Spacing */
+        header#home {
+            padding-top: 140px; /* Space for the fixed nav */
+            text-align: center;
+        }
+
+        /* Tablet & Mobile (up to 768px) */
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+            }
+
+            nav ul {
+                display: none; /* Hide menu by default on mobile */
+                flex-direction: column;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                background: #0a0f19;
+                padding: 20px 0;
+                text-align: center;
+                border-bottom: 2px solid #00d4ff;
+            }
+
+            nav ul.active {
+                display: flex;
+            }
+
+            nav ul li {
+                margin: 15px 0;
+            }
+
+            /* Stack Hero Buttons */
+            .hero-btns {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero-btns .btn, 
+            .hero-btns .btn-outline {
+                width: 100%;
+                max-width: 280px;
+            }
+
+            /* Contact Form Rows */
+            .form-row {
+                flex-direction: column;
+                gap: 0;
+            }
+            
+            .contact-form input, 
+            .contact-form select, 
+            .contact-form textarea {
+                width: 100% !important;
+                margin-bottom: 15px;
+            }
+
+            /* Project Grid Stacking */
+            .project-grid {
+                grid-template-columns: 1fr;
+                gap: 20px;
+                padding: 15px;
+            }
+        }
+    </style>
 </head>
 <body>
 
     <nav>
         <div class="logo">Build<span>Bright</span></div>
-        <ul>
+        <div class="menu-toggle" id="mobile-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul id="nav-list">
             <li><a href="#home">Home</a></li>
             <li><a href="#projects">Systems</a></li>
             <li><a href="#tech-stack">Tech</a></li>
@@ -177,9 +287,9 @@
             </div>
             <div class="socials">
                 <a href="https://www.facebook.com/profile.php?id=61585601410507" 
-                 target="_blank" 
-                 rel="noopener noreferrer" 
-                 aria-label="Facebook">
+                   target="_blank" 
+                   rel="noopener noreferrer" 
+                   aria-label="Facebook">
                 <i class="fab fa-facebook"></i>
                 </a>
             </div>
@@ -196,6 +306,22 @@
     </div>
 
     <script>
+        // Mobile Menu Toggle
+        const menuToggle = document.getElementById('mobile-menu');
+        const navList = document.getElementById('nav-list');
+
+        menuToggle.addEventListener('click', () => {
+            navList.classList.toggle('active');
+        });
+
+        // Close menu when a link is clicked
+        document.querySelectorAll('#nav-list a').forEach(link => {
+            link.addEventListener('click', () => {
+                navList.classList.remove('active');
+            });
+        });
+
+        // Success Modal logic
         const urlParams = new URLSearchParams(window.location.search);
         if (urlParams.get('status') === 'success') {
             document.getElementById('successModal').style.display = 'flex';
