@@ -3,9 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HOA Management System | Build Bright Software Solution</title>
+    <title>Community Hub | Build Bright Software Solution</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .project-hero {
+            background: radial-gradient(circle at center, #4b39b5 0%, #0d1117 100%);
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .hero-emblem {
+            font-size: 4rem;
+            color: #9b87f5;
+            filter: drop-shadow(0 0 15px rgba(155, 135, 245, 0.4));
+            margin-bottom: 20px;
+        }
+        .quick-actions-strip {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+        .action-pill {
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            padding: 12px 25px;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 0.9rem;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            transition: 0.3s;
+        }
+        .action-pill i { color: #9b87f5; }
+        .action-pill:hover {
+            background: #6c5ce7;
+            border-color: #a29bfe;
+            transform: translateY(-3px);
+        }
+    </style>
 </head>
 <body>
 
@@ -16,9 +54,17 @@
 
     <header class="project-hero">
         <div class="hero-content">
-            <div class="badge">Property & Financial Tech</div>
-            <h1>HOA <span>Management System</span></h1>
-            <p>A specialized residential ERP designed to automate billing, resident tracking, and property management for modern Homeowners Associations.</p>
+            <div class="hero-emblem"><i class="fas fa-city"></i></div>
+            <div class="badge" style="display: inline-block; margin-bottom: 15px; color: #9b87f5; border: 1px solid #9b87f5; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem;">Association Management ERP</div>
+            <h1>Community <span>Hub</span></h1>
+            <p>A sophisticated Homeowners Association platform designed to unify village operations, from financial collections and POS transactions to geospatial property tagging.</p>
+            
+            <div class="quick-actions-strip">
+                <div class="action-pill"><i class="fas fa-cash-register"></i> Open POS</div>
+                <div class="action-pill"><i class="fas fa-plus-circle"></i> Add Property</div>
+                <div class="action-pill"><i class="fas fa-user-plus"></i> Register Owner</div>
+                <div class="action-pill"><i class="fas fa-map-marked-alt"></i> View Village Map</div>
+            </div>
         </div>
     </header>
 
@@ -27,24 +73,40 @@
             
             <div class="info-block">
                 <h2><i class="fas fa-home"></i> Digitizing Community Living</h2>
-                <p>Managing a subdivision or residential building manually leads to billing disputes and disorganized records. The <strong>HOA Management System</strong> automates core community operations, ensuring financial transparency and efficient resident service delivery.</p>
+                <p>Managing a subdivision manually leads to billing disputes and disorganized records. <strong>Community Hub</strong> automates core operations, ensuring financial transparency and efficient resident service delivery through a centralized dashboard.</p>
             </div>
 
             <div class="info-grid">
                 <div class="info-card">
-                    <i class="fas fa-file-invoice-dollar"></i>
-                    <h3>Billing Automation</h3>
-                    <p>Automated generation of monthly dues, utility billings, and penalty assessments with integrated payment tracking.</p>
+                    <i class="fas fa-wallet"></i>
+                    <h3>Point of Sale (POS)</h3>
+                    <p>Integrated collection system for real-time processing of association dues, penalties, and service fees with automated receipting.</p>
                 </div>
                 <div class="info-card">
-                    <i class="fas fa-id-badge"></i>
-                    <h3>Resident Directory</h3>
-                    <p>Secure database for homeowner profiles, tenant records, and property ownership history.</p>
+                    <i class="fas fa-map-pin"></i>
+                    <h3>Geo-Mapping & Tagging</h3>
+                    <p>Interactive village map for visual property tracking, allowing admins to tag units based on occupancy and ownership status.</p>
                 </div>
                 <div class="info-card">
-                    <i class="fas fa-tools"></i>
-                    <h3>Property Maintenance</h3>
-                    <p>Module for tracking community assets, facility bookings, and maintenance requests within the subdivision.</p>
+                    <i class="fas fa-users"></i>
+                    <h3>Household Registry</h3>
+                    <p>Advanced resident list management that groups individuals by household units for more accurate community demographics.</p>
+                </div>
+
+                <div class="info-card">
+                    <i class="fas fa-door-open"></i>
+                    <h3>Unit Inventory</h3>
+                    <p>Track real-time availability of residential units, categorizing them as Available, Occupied, or Sold directly on the dashboard.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-receipt"></i>
+                    <h3>Billing & Payment History</h3>
+                    <p>Comprehensive ledger for every property, maintaining a secure record of all historical transactions and outstanding balances.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-wrench"></i>
+                    <h3>Maintenance Module</h3>
+                    <p>Dedicated tools for managing community facility repairs, equipment inventory, and work order scheduling.</p>
                 </div>
             </div>
 
@@ -52,11 +114,12 @@
                 <h2>Technical Infrastructure</h2>
                 <div class="details-grid">
                     <div class="details-main">
-                        <p>This system is built with a focus on data integrity and financial accuracy. By utilizing a secure relational database, the HOA system ensures that all financial transactions are logged and auditable.</p>
+                        <p>Community Hub focuses on data integrity. By utilizing a secure relational database, the system ensures that every "Today's Collection" entry is logged and auditable.</p>
                         <ul class="features-list">
-                            <li><strong>Automated Ledger:</strong> Real-time balancing of community funds and individual account statements.</li>
-                            <li><strong>Tenant-Owner Linking:</strong> Intelligent data relationships that separate owner responsibilities from tenant activities.</li>
-                            <li><strong>Reporting Engine:</strong> Generates financial summaries, delinquency reports, and collection status at the click of a button.</li>
+                            <li><strong>Administrative Quick Actions:</strong> High-speed navigation for core tasks like owner registration and billing.</li>
+                            <li><strong>Dynamic Status Indicators:</strong> Real-time dashboard cards for resident counts and unit availability.</li>
+                            <li><strong>Financial Logic:</strong> Multi-layer math engine for calculating monthly dues and penalties.</li>
+                            <li><strong>Geospatial Integration:</strong> Plots property coordinates onto a custom village layout for easier management.</li>
                         </ul>
                     </div>
                     
@@ -64,52 +127,45 @@
                         <div class="tech-box">
                             <h3>Specifications</h3>
                             <ul>
-                                <li><i class="fab fa-php"></i> PHP Framework</li>
+                                <li><i class="fab fa-php"></i> PHP / Laravel Core</li>
                                 <li><i class="fas fa-database"></i> MySQL Architecture</li>
-                                <li><i class="fas fa-chart-line"></i> Financial Logic Modules</li>
-                                <li><i class="fas fa-shield-alt"></i> AES Security</li>
+                                <li><i class="fas fa-cash-register"></i> POS Logic Engine</li>
+                                <li><i class="fas fa-map-location-dot"></i> GIS API Integration</li>
                             </ul>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
 
     <section id="contact">
         <div class="contact-container">
-            <h2>Interested in a similar system?</h2>
-            <p>Inquire about custom system development or technical consultation for your residential community.</p>
+            <h2>Modernize Your Community</h2>
+            <p>Inquire about custom ERP solutions for your Homeowners Association or Subdivision management.</p>
             
             <form action="contact.php" method="POST" class="contact-form">
                 <div class="form-row">
                     <input type="text" name="name" placeholder="Full Name" required>
                     <input type="email" name="email" placeholder="Email Address" required>
                 </div>
-
                 <div class="form-row">
-                    <input type="text" name="company_name" placeholder="HOA / Subdivision Name">
+                    <input type="text" name="company_name" placeholder="HOA / Village Name">
                     <input type="tel" name="phone" placeholder="Contact Number" required>
                 </div>
 
-                <div class="form-row">
-                    <input type="text" name="company_address" placeholder="Property Address / Location">
-                </div>
-
                 <select name="interest" required>
-                    <option value="Association Management" selected>Association Management (HOA Interest)</option>
-                    <option value="LGU / Barangay Systems">LGU / Barangay Systems</option>
-                    <option value="Healthcare Systems">Medical & Scheduling</option>
+                    <option value="Association Management" selected>Association Management (Community Hub Interest)</option>
                     <option value="Custom Web Application">Custom Development</option>
                 </select>
 
-                <textarea name="message" rows="5" placeholder="Tell us about your project requirements..." required></textarea>
+                <textarea name="message" rows="5" placeholder="Tell us about your property management needs..." required></textarea>
                 
                 <button type="submit" class="btn">Send Inquiry</button>
             </form>
         </div>
     </section>
+
     <footer>
         <div class="footer-content">
             <div class="footer-info">
@@ -118,10 +174,6 @@
                 <p><i class="fas fa-phone"></i> 09239036497</p>
                 <p><i class="fas fa-envelope"></i> ryancastaneda@rocketmail.com</p>
             </div>
-            <div class="socials">
-                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            </div>
         </div>
     </footer>
 
@@ -129,16 +181,12 @@
         <div class="modal-content">
             <div class="modal-icon"><i class="fas fa-check-circle"></i></div>
             <h2>Message Sent!</h2>
-            <p>Thank you for reaching out to Build Bright. Ryan will get back to you shortly.</p>
+            <p>Thank you for reaching out. Ryan will get back to you shortly.</p>
             <button onclick="closeModal()" class="btn">Close</button>
         </div>
     </div>
 
     <script>
-        const urlParams = new URLSearchParams(window.location.search);
-        if (urlParams.get('status') === 'success') {
-            document.getElementById('successModal').style.display = 'flex';
-        }
         function closeModal() {
             document.getElementById('successModal').style.display = 'none';
             window.history.replaceState({}, document.title, window.location.pathname);

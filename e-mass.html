@@ -6,6 +6,42 @@
     <title>E-MASS | Build Bright Software Solution</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <style>
+        .project-hero {
+            background: radial-gradient(circle at center, #1a2533 0%, #0d1117 100%);
+            padding: 100px 20px;
+            text-align: center;
+        }
+        .hero-emblem {
+            font-size: 4rem;
+            color: #4fd1ed;
+            filter: drop-shadow(0 0 15px rgba(79, 209, 237, 0.4));
+            margin-bottom: 20px;
+        }
+        .stats-strip {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            margin-top: 40px;
+            flex-wrap: wrap;
+        }
+        .stat-item {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 15px 25px;
+            border-radius: 10px;
+            border-left: 3px solid #4fd1ed;
+        }
+        .stat-item span {
+            display: block;
+            font-size: 0.8rem;
+            color: #8b949e;
+            text-transform: uppercase;
+        }
+        .stat-item strong {
+            font-size: 1.2rem;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
 
@@ -16,9 +52,16 @@
 
     <header class="project-hero">
         <div class="hero-content">
-            <div class="badge">Healthcare Technology</div>
+            <div class="hero-emblem"><i class="fas fa-file-medical-alt"></i></div>
+            <div class="badge" style="display: inline-block; margin-bottom: 15px; color: #4fd1ed; border: 1px solid #4fd1ed; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem;">Healthcare Technology</div>
             <h1>E-MASS</h1>
-            <p>The Electronic Medical Appointment Scheduling System is a robust digital platform designed to optimize patient flow and reduce wait times in medical facilities.</p>
+            <p>The Electronic Medical Appointment Scheduling System is a robust digital platform designed to optimize patient flow, reduce wait times, and provide seamless doctor-patient coordination.</p>
+            
+            <div class="stats-strip">
+                <div class="stat-item"><span>Doctors</span><strong>Available Now</strong></div>
+                <div class="stat-item"><span>Patients</span><strong>Securely Registered</strong></div>
+                <div class="stat-item"><span>Sessions</span><strong>Today's Schedule</strong></div>
+            </div>
         </div>
     </header>
 
@@ -32,19 +75,51 @@
 
             <div class="info-grid">
                 <div class="info-card">
+                    <i class="fas fa-th-large"></i>
+                    <h3>Patient Dashboard</h3>
+                    <p>Personalized overview for patients to manage bookings, track upcoming schedules, and search for providers in one view.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-search-plus"></i>
+                    <h3>Doctor & Session Search</h3>
+                    <p>Advanced filtering to find medical professionals by specialty, profile details, or specific consultation time slots.</p>
+                </div>
+                <div class="info-card">
                     <i class="fas fa-calendar-check"></i>
-                    <h3>Smart Scheduling</h3>
-                    <p>Automated slot management that prevents double-booking and allows patients to choose available times from their own devices.</p>
+                    <h3>Online Booking System</h3>
+                    <p>Patients can select and confirm appointment slots digitally, eliminating the need for physical visits just to secure a schedule.</p>
+                </div>
+
+                <div class="info-card">
+                    <i class="fas fa-book-medical"></i>
+                    <h3>Booking Management</h3>
+                    <p>A "My Bookings" module allowing patients to review session types, assigned doctors, and full appointment histories.</p>
                 </div>
                 <div class="info-card">
-                    <i class="fas fa-user-medical"></i>
-                    <h3>Patient Records</h3>
-                    <p>Secure digital profiles that store appointment history, making it easier for clinics to track patient visits over time.</p>
+                    <i class="fas fa-user-md"></i>
+                    <h3>Doctor Directory</h3>
+                    <p>Complete access to professional profiles, specialties, and real-time availability for all registered medical staff.</p>
                 </div>
                 <div class="info-card">
-                    <i class="fas fa-clock"></i>
-                    <h3>Queue Management</h3>
-                    <p>Real-time updates on appointment status to help medical staff manage daily patient loads efficiently.</p>
+                    <i class="fas fa-chart-line"></i>
+                    <h3>Real-Time Monitoring</h3>
+                    <p>Live tracking of total registered patients, new bookings, and scheduled sessions for efficient facility administration.</p>
+                </div>
+
+                <div class="info-card">
+                    <i class="fas fa-user-shield"></i>
+                    <h3>Secure Authentication</h3>
+                    <p>Encrypted login protocols ensuring that sensitive medical schedules and personal data remain strictly confidential.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-id-card"></i>
+                    <h3>Profile Management</h3>
+                    <p>Self-service module for patients to update personal information, medical preferences, and account settings.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-bell"></i>
+                    <h3>Appointment Tracking</h3>
+                    <p>Visual indicators and countdowns for upcoming consultations to reduce missed appointments and optimize clinic flow.</p>
                 </div>
             </div>
 
@@ -52,11 +127,12 @@
                 <h2>Technical Infrastructure</h2>
                 <div class="details-grid">
                     <div class="details-main">
-                        <p>E-MASS utilizes a secure database architecture to ensure that sensitive medical appointment data remains private while being easily accessible to authorized medical personnel.</p>
+                        <p>E-MASS utilizes a secure database architecture to ensure that sensitive medical appointment data remains private while being easily accessible to authorized personnel.</p>
                         <ul class="features-list">
-                            <li><strong>Cloud-Based Sync:</strong> Ensures schedules are updated across all devices instantly.</li>
-                            <li><strong>Automated Reminders:</strong> Designed to support future integration for SMS or email notifications to reduce "no-shows."</li>
-                            <li><strong>Responsive Interface:</strong> Optimized for use by both clinic administrators and patients on mobile or desktop.</li>
+                            <li><strong>Cloud-Based Sync:</strong> Real-time schedule updates across all devices.</li>
+                            <li><strong>Conflict Resolution:</strong> Logic-driven backend to prevent double-booking of doctors or sessions.</li>
+                            <li><strong>Responsive Interface:</strong> Optimized for use by both clinic administrators and mobile patients.</li>
+                            <li><strong>Session Tracking:</strong> Detailed logging of consultation statuses from "Pending" to "Completed."</li>
                         </ul>
                     </div>
                     
@@ -65,8 +141,8 @@
                             <h3>Specifications</h3>
                             <ul>
                                 <li><i class="fab fa-php"></i> PHP Backend</li>
-                                <li><i class="fas fa-database"></i> MySQL Database</li>
-                                <li><i class="fas fa-lock"></i> Secure Patient Data Auth</li>
+                                <li><i class="fas fa-database"></i> MySQL Relational DB</li>
+                                <li><i class="fas fa-lock"></i> SSL/AES Data Security</li>
                                 <li><i class="fas fa-mobile-alt"></i> Mobile-First UI</li>
                             </ul>
                         </div>
@@ -86,29 +162,23 @@
                     <input type="text" name="name" placeholder="Full Name" required>
                     <input type="email" name="email" placeholder="Email Address" required>
                 </div>
-
                 <div class="form-row">
-                    <input type="text" name="company_name" placeholder="Company Name">
+                    <input type="text" name="company_name" placeholder="Clinic/Hospital Name">
                     <input type="tel" name="phone" placeholder="Contact Number" required>
-                </div>
-
-                <div class="form-row">
-                    <input type="text" name="company_address" placeholder="Company Address">
                 </div>
 
                 <select name="interest" required>
                     <option value="Healthcare Systems" selected>Healthcare Systems (E-MASS Interest)</option>
-                    <option value="LGU / Barangay Systems">LGU / Barangay Systems</option>
-                    <option value="Association Management">HOA & Property</option>
                     <option value="Custom Web Application">Custom Development</option>
                 </select>
 
-                <textarea name="message" rows="5" placeholder="Tell us about your project requirements..." required></textarea>
+                <textarea name="message" rows="5" placeholder="Tell us about your clinic's requirements..." required></textarea>
                 
                 <button type="submit" class="btn">Send Inquiry</button>
             </form>
         </div>
     </section>
+
     <footer>
         <div class="footer-content">
             <div class="footer-info">
@@ -117,10 +187,6 @@
                 <p><i class="fas fa-phone"></i> 09239036497</p>
                 <p><i class="fas fa-envelope"></i> ryancastaneda@rocketmail.com</p>
             </div>
-            <div class="socials">
-                <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
-                <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
-            </div>
         </div>
     </footer>
 
@@ -128,16 +194,12 @@
         <div class="modal-content">
             <div class="modal-icon"><i class="fas fa-check-circle"></i></div>
             <h2>Message Sent!</h2>
-            <p>Thank you for reaching out to Build Bright. Ryan will get back to you shortly.</p>
+            <p>Thank you for reaching out. Ryan will get back to you shortly.</p>
             <button onclick="closeModal()" class="btn">Close</button>
         </div>
     </div>
 
     <script>
-        const urlParams = new URLSearchParams(window.location.search);
-        if (urlParams.get('status') === 'success') {
-            document.getElementById('successModal').style.display = 'flex';
-        }
         function closeModal() {
             document.getElementById('successModal').style.display = 'none';
             window.history.replaceState({}, document.title, window.location.pathname);
