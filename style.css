@@ -565,3 +565,62 @@ footer {
     margin-bottom: 20px;
 }
 
+
+
+
+/* --- CONTACT METHOD CARDS --- */
+.contact-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    margin: 40px 0;
+}
+
+.method-card {
+    background: #1a1f2b;
+    padding: 30px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.05);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.method-card:hover {
+    border-color: #ffffff;
+    transform: translateY(-5px);
+    background: rgba(0, 212, 255, 0.05);
+}
+
+.method-card i {
+    font-size: 2rem;
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+.method-card span {
+    color: #a0a0a0;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.method-card strong {
+    color: #fff;
+    font-size: 1.1rem;
+    word-break: break-all;
+}
+
+.social-cta {
+    margin-top: 50px;
+    padding: 30px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+}
+
+.social-cta p {
+    margin-bottom: 20px;
+    color: #a0a0a0;
+}

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>E-MASS | Build Bright Software Solution</title>
+    <title>One ID | Build Bright Software Solution</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <style>
@@ -28,21 +28,21 @@
             color: #fff;
             text-shadow: 0 0 20px rgba(255,255,255,0.2);
         }
+        .hero-content h1 span { color: #4fd1ed; }
         .hero-content p {
             max-width: 800px;
             margin: 0 auto 40px;
             color: #8b949e;
             line-height: 1.6;
         }
-        
-        .stats-strip {
+        .hero-buttons {
             display: flex;
             justify-content: center;
             gap: 20px;
             margin-bottom: 40px;
             flex-wrap: wrap;
         }
-        .stat-item {
+        .category-btn {
             background: rgba(13, 17, 23, 0.8);
             border: 2px solid #30363d;
             padding: 20px 30px;
@@ -51,18 +51,17 @@
             transition: all 0.3s ease;
             min-width: 200px;
         }
-        .stat-item span {
+        .category-btn i {
             display: block;
-            font-size: 0.8rem;
+            font-size: 1.5rem;
             margin-bottom: 10px;
-            color: #8b949e;
-            text-transform: uppercase;
-        }
-        .stat-item strong {
-            font-size: 1.1rem;
             color: #4fd1ed;
         }
-
+        .category-btn:hover {
+            border-color: #4fd1ed;
+            box-shadow: 0 0 15px rgba(79, 209, 237, 0.3);
+            transform: translateY(-5px);
+        }
         .explore-btn {
             background: #4fd1ed;
             color: #0d1117;
@@ -75,8 +74,12 @@
             cursor: pointer;
             transition: 0.3s;
         }
+        .explore-btn:hover {
+            background: #fff;
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.4);
+        }
 
-        /* --- FEATURE GRID SECTION --- */
+        /* --- INFO GRID SECTION --- */
         .project-info-section { padding: 60px 0; background: #0d1117; }
         .info-container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
         .info-block { margin-bottom: 60px; text-align: center; }
@@ -126,7 +129,6 @@
 
         @media (max-width: 768px) {
             .hero-content h1 { font-size: 2.5rem; letter-spacing: 4px; }
-            .details-grid { grid-template-columns: 1fr !important; }
         }
     </style>
 </head>
@@ -139,19 +141,30 @@
 
     <header class="project-hero">
         <div class="hero-content">
-            <div class="hero-emblem"><i class="fas fa-file-medical-alt"></i></div>
-            <div class="badge" style="display: inline-block; margin-bottom: 15px; color: #4fd1ed; border: 1px solid #4fd1ed; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem;">Healthcare Technology</div>
-            <h1>E-MASS</h1>
-            <p>The Electronic Medical Appointment Scheduling System is a robust digital platform designed to optimize patient flow, reduce wait times, and provide seamless doctor-patient coordination.</p>
+            <div class="hero-emblem">
+                <i class="fas fa-id-card-alt"></i>
+            </div>
+            <div class="badge" style="display: inline-block; margin-bottom: 15px; color: #4fd1ed; border: 1px solid #4fd1ed; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem;">E-Governance Solution</div>
+            <h1><span>One ID</span></h1>
+            <p>A sophisticated digital identity ecosystem designed to unify resident services, improve data accuracy, and secure city-wide transactions through real-time encrypted verification.</p>
             
-            <div class="stats-strip">
-                <div class="stat-item"><span>Doctors</span><strong>Directory Access</strong></div>
-                <div class="stat-item"><span>Patients</span><strong>Secure Registration</strong></div>
-                <div class="stat-item"><span>Sessions</span><strong>Real-time Booking</strong></div>
+            <div class="hero-buttons">
+                <div class="category-btn">
+                    <i class="fas fa-chart-pie"></i>
+                    <span>Admin Dashboard</span>
+                </div>
+                <div class="category-btn">
+                    <i class="fas fa-print"></i>
+                    <span>ID Printing Queue</span>
+                </div>
+                <div class="category-btn">
+                    <i class="fas fa-qrcode"></i>
+                    <span>Instant Verification</span>
+                </div>
             </div>
 
             <button class="explore-btn" onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">
-                Explore E-MASS Features
+                Explore Platform Features
             </button>
         </div>
     </header>
@@ -160,62 +173,65 @@
         <div class="info-container">
             
             <div class="info-block">
-                <h2><i class="fas fa-stethoscope"></i> Modernizing Healthcare Access</h2>
-                <p style="color: #8b949e; max-width: 800px; margin: 0 auto;">Manual appointment booking often leads to overbooked slots and patient frustration. <strong>E-MASS</strong> coordinates patient needs with provider availability in real-time.</p>
+                <h2><i class="fas fa-microchip"></i> The Core Problem</h2>
+                <p style="color: #8b949e; max-width: 800px; margin: 0 auto;">Fragmented paper records lead to identity theft and redundant registrations. The <strong>One ID</strong> provides a single source of truth for all resident interactions with the local government.</p>
             </div>
 
             <div class="info-grid">
                 <div class="info-card">
-                    <i class="fas fa-th-large"></i>
-                    <h3>Patient Dashboard</h3>
-                    <p>Personalized overview to manage bookings, track schedules, and search for providers in one view.</p>
+                    <i class="fas fa-tachometer-alt"></i>
+                    <h3>Centralized Admin</h3>
+                    <p>Real-time control panel to monitor registered residents, applications, and system status.</p>
                 </div>
                 <div class="info-card">
-                    <i class="fas fa-search-plus"></i>
-                    <h3>Doctor & Session Search</h3>
-                    <p>Advanced filtering to find professionals by specialty, profile details, or consultation time slots.</p>
+                    <i class="fas fa-users-cog"></i>
+                    <h3>Resident Records</h3>
+                    <p>Advanced management tools to search, update, and verify resident identities securely.</p>
                 </div>
                 <div class="info-card">
-                    <i class="fas fa-calendar-check"></i>
-                    <h3>Online Booking</h3>
-                    <p>Patients select and confirm appointment slots digitally, eliminating unnecessary physical visits.</p>
+                    <i class="fas fa-tasks"></i>
+                    <h3>Application Flow</h3>
+                    <p>Streamlined workflow to review, approve, or reject ID applications submitted by residents.</p>
                 </div>
                 <div class="info-card">
-                    <i class="fas fa-user-md"></i>
-                    <h3>Doctor Directory</h3>
-                    <p>Complete access to professional profiles, specialties, and real-time availability for medical staff.</p>
+                    <i class="fas fa-print"></i>
+                    <h3>Print Management</h3>
+                    <p>Efficiently manage approved IDs ready for production with status monitoring.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-comments"></i>
+                    <h3>Live Support</h3>
+                    <p>Integrated real-time chat for residents to report issues directly to the admin team.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-qrcode"></i>
+                    <h3>QR Validation</h3>
+                    <p>Fast identity validation by scanning resident ID QR codes during public transactions.</p>
                 </div>
                 <div class="info-card">
                     <i class="fas fa-chart-line"></i>
-                    <h3>Facility Admin</h3>
-                    <p>Live tracking of total registered patients and bookings for efficient clinic administration.</p>
+                    <h3>City Analytics</h3>
+                    <p>Detailed statistics on enrollment growth to support data-driven city planning.</p>
                 </div>
                 <div class="info-card">
-                    <i class="fas fa-user-shield"></i>
-                    <h3>Secure Privacy</h3>
-                    <p>Encrypted login protocols ensuring that sensitive medical schedules remain strictly confidential.</p>
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>AES Encryption</h3>
+                    <p>High-level data encryption ensures compliance with national privacy and security laws.</p>
                 </div>
             </div>
-            
+
             <div class="technical-deep-dive" style="background: rgba(79, 209, 237, 0.05); padding: 40px; border-radius: 15px; border: 1px solid rgba(79, 209, 237, 0.1); margin-top: 40px;">
                 <h2 style="color: #fff; margin-bottom: 20px;">Technical Infrastructure</h2>
-                <div class="details-grid" style="display: grid; grid-template-columns: 2fr 1fr; gap: 40px;">
-                    <div class="details-main">
-                        <p style="color: #8b949e; line-height: 1.8;">E-MASS utilizes a secure database architecture to ensure sensitive appointment data remains private while being accessible to authorized clinic personnel.</p>
-                        <ul style="color: #fff; padding-left: 20px; line-height: 2;">
-                            <li><strong>Conflict Resolution:</strong> Logic-driven backend to prevent double-booking.</li>
-                            <li><strong>Cloud-Based Sync:</strong> Real-time schedule updates across all devices.</li>
-                            <li><strong>Session Tracking:</strong> Detailed logging from "Pending" to "Completed."</li>
-                        </ul>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px;">
+                    <div style="color: #8b949e; font-size: 0.95rem; line-height: 1.8;">
+                        One ID is architected to handle city-wide traffic with high availability. Built on the <strong>Laravel Framework</strong>, it supports hardware integration for QR scanners and biometric modules.
                     </div>
-                    
-                    <div class="tech-box" style="background: #0d1117; padding: 25px; border-radius: 10px; border-left: 4px solid #4fd1ed;">
-                        <h3 style="color: #4fd1ed; margin-top: 0;">Specifications</h3>
-                        <ul style="list-style: none; padding: 0; color: #fff;">
-                            <li style="margin-bottom: 10px;"><i class="fab fa-php" style="color:#4fd1ed; margin-right:10px;"></i> PHP / Laravel</li>
+                    <div style="background: #0d1117; padding: 25px; border-radius: 10px; border-left: 4px solid #4fd1ed;">
+                        <ul style="list-style: none; padding: 0; color: #fff; font-size: 0.9rem;">
+                            <li style="margin-bottom: 10px;"><i class="fab fa-laravel" style="color:#4fd1ed; margin-right:10px;"></i> Laravel Backend</li>
                             <li style="margin-bottom: 10px;"><i class="fas fa-database" style="color:#4fd1ed; margin-right:10px;"></i> MySQL Relational DB</li>
-                            <li style="margin-bottom: 10px;"><i class="fas fa-lock" style="color:#4fd1ed; margin-right:10px;"></i> SSL Data Security</li>
-                            <li><i class="fas fa-mobile-alt" style="color:#4fd1ed; margin-right:10px;"></i> Mobile-First UI</li>
+                            <li style="margin-bottom: 10px;"><i class="fas fa-key" style="color:#4fd1ed; margin-right:10px;"></i> RSA/AES Encryption</li>
+                            <li><i class="fas fa-sync" style="color:#4fd1ed; margin-right:10px;"></i> Real-time Sync API</li>
                         </ul>
                     </div>
                 </div>
@@ -223,10 +239,10 @@
         </div>
     </section>
 
-    <section id="contact" style="padding: 80px 20px; text-align: center; background: #0d1117;">
+    <section id="contact" style="padding: 80px 20px; text-align: center;">
         <div class="info-container">
-            <h2 style="color:#fff;">Inquire for your Clinic</h2>
-            <p style="color: #8b949e; margin-bottom: 40px;">Contact us directly for a technical consultation or a custom scheduling system for your facility.</p>
+            <h2>Let's Build Something Great</h2>
+            <p style="color: #8b949e; margin-bottom: 40px;">Contact us directly for a technical consultation or a live system demo.</p>
             
             <div class="contact-methods">
                 <div class="method-card">

@@ -72,6 +72,7 @@
             box-shadow: 0 0 20px rgba(79, 209, 237, 0.5);
             border: none;
             cursor: pointer;
+            transition: 0.3s;
         }
 
         /* --- FEATURE GRID SECTION --- */
@@ -113,6 +114,45 @@
         .info-card h3 { color: #fff; margin-bottom: 15px; }
         .info-card p { color: #8b949e; font-size: 0.9rem; line-height: 1.5; }
 
+        /* --- CONTACT CARDS STYLE --- */
+        .contact-methods {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 40px 0;
+        }
+        .method-card {
+            background: #1a1f2b;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.05);
+            text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: 0.3s;
+        }
+        .method-card:hover {
+            border-color: #4fd1ed;
+            transform: translateY(-5px);
+            background: rgba(0, 212, 255, 0.05);
+        }
+        .method-card i {
+            font-size: 2rem;
+            color: #4fd1ed;
+            margin-bottom: 15px;
+        }
+        .method-card span {
+            color: #a0a0a0;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            margin-bottom: 5px;
+        }
+        .method-card strong {
+            color: #fff;
+            font-size: 1.1rem;
+        }
+
         /* --- TECH SPECS --- */
         .technical-deep-dive {
             background: rgba(79, 209, 237, 0.05);
@@ -132,6 +172,7 @@
 
         @media (max-width: 768px) {
             .hero-content h1 { font-size: 2.5rem; letter-spacing: 4px; }
+            .technical-deep-dive > div { grid-template-columns: 1fr !important; gap: 20px; }
         }
     </style>
 </head>
@@ -245,7 +286,33 @@
                     </div>
                 </div>
             </div>
+        </div>
+    </section>
 
+    <section id="contact" style="padding: 80px 20px; text-align: center; background: #0d1117;">
+        <div class="info-container">
+            <h2 style="color:#fff;">Streamline your Collections</h2>
+            <p style="color: #8b949e; margin-bottom: 40px;">Contact us directly for a technical consultation or a custom demo for your rental property or building.</p>
+            
+            <div class="contact-methods">
+                <div class="method-card">
+                    <i class="fas fa-building"></i>
+                    <span>Company</span>
+                    <strong>Build Bright Software Solution</strong>
+                </div>
+                
+                <a href="mailto:buildbrightsoftwaresolution@gmail.com" class="method-card">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                    <strong>buildbrightsoftwaresolution@gmail.com</strong>
+                </a>
+                
+                <a href="tel:09175852472" class="method-card">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>Contact</span>
+                    <strong>0917-585-2472</strong>
+                </a>
+            </div>
         </div>
     </section>
 

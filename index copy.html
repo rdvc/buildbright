@@ -53,6 +53,28 @@
             text-align: center;
         }
 
+        /* Technical Services Grid Styling */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 40px 5%;
+        }
+
+        .service-card {
+            background: #1a1f2b;
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.05);
+            transition: transform 0.3s;
+        }
+
+        .service-card:hover { transform: translateY(-5px); border-color: #00d4ff; }
+        .service-card i { font-size: 2.5rem; color: #00d4ff; margin-bottom: 15px; }
+        .service-card h3 { color: white; margin-bottom: 10px; }
+        .service-card p { color: #a0a0a0; font-size: 0.9rem; }
+
         /* Tablet & Mobile (up to 768px) */
         @media (max-width: 768px) {
             .menu-toggle {
@@ -124,6 +146,7 @@
         <ul id="nav-list">
             <li><a href="#home">Home</a></li>
             <li><a href="#projects">Systems</a></li>
+            <li><a href="#services">Services</a></li>
             <li><a href="#tech-stack">Tech</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
@@ -171,6 +194,62 @@
                     </ul>
                     <div class="tags"><span class="tag">PHP & MySQL</span></div>
                 </div>
+            </a>
+            
+            <a href="restaurant-pos.html" class="project-card-link">
+            <div class="project-card">
+                <div class="status live">NEW</div>
+                <div class="icon"><i class="fas fa-utensils"></i></div>
+                <h3>Restaurant POS</h3>
+                <p>Complete dine-in and take-out management system for the food industry.</p>
+                <ul class="features">
+                    <li><i class="fas fa-check"></i> Table Management</li>
+                    <li><i class="fas fa-check"></i> Kitchen Display System</li>
+                </ul>
+                <div class="tags"><span class="tag">POS</span><span class="tag">Inventory</span></div>
+            </div>
+            </a>
+
+            <a href="pharmacy-pos.html" class="project-card-link">
+            <div class="project-card">
+                <div class="status live">NEW</div>
+                <div class="icon"><i class="fas fa-capsules"></i></div>
+                <h3>Pharmacy POS & Inventory</h3>
+                <p>Specialized tracking for medical retail with expiry and batch notifications.</p>
+                <ul class="features">
+                    <li><i class="fas fa-check"></i> Expiry Alerts</li>
+                    <li><i class="fas fa-check"></i> Batch Tracking</li>
+                </ul>
+                <div class="tags"><span class="tag">HealthTech</span></div>
+            </div>
+            </a>
+
+            <a href="school-management.html" class="project-card-link">
+            <div class="project-card">
+                <div class="status live">NEW</div>
+                <div class="icon"><i class="fas fa-school"></i></div>
+                <h3>School Management</h3>
+                <p>Centralized student, faculty, and grading records for educational institutions.</p>
+                <ul class="features">
+                    <li><i class="fas fa-check"></i> Student Portal</li>
+                    <li><i class="fas fa-check"></i> Automated Grading</li>
+                </ul>
+                <div class="tags"><span class="tag">EduTech</span></div>
+            </div>
+            </a>
+
+            <a href="tenant-billing.html" class="project-card-link">
+            <div class="project-card">
+                <div class="status live">NEW</div>
+                <div class="icon"><i class="fas fa-file-invoice-dollar"></i></div>
+                <h3>Tenant Billing System</h3>
+                <p>Automated rental and utility billing for property owners and stall management.</p>
+                <ul class="features">
+                    <li><i class="fas fa-check"></i> Payment History</li>
+                    <li><i class="fas fa-check"></i> Automated Invoices</li>
+                </ul>
+                <div class="tags"><span class="tag">Real Estate</span></div>
+            </div>
             </a>
 
             <a href="e-mass.html" class="project-card-link">
@@ -229,6 +308,46 @@
                 </div>
             </a>
 
+            <a href="website-development.html" class="project-card-link">
+            <div class="project-card">
+                <div class="status live">LIVE</div>
+                <div class="icon"><i class="fas fa-globe"></i></div>
+                <h3>Web Development</h3>
+                <p>Custom-built corporate and e-commerce websites with modern responsive design.</p>
+                <ul class="features">
+                    <li><i class="fas fa-check"></i> SEO Optimized</li>
+                    <li><i class="fas fa-check"></i> Mobile Responsive</li>
+                </ul>
+                <div class="tags"><span class="tag">UI/UX</span></div>
+            </div>
+            </a>
+
+        </div>
+    </section>
+
+    <section id="services" style="background: #0a0f19; padding: 60px 0;">
+        <h2 class="section-title" style="color: white;">Technical & Creative Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-network-wired"></i>
+                <h3>Network Cabling</h3>
+                <p>Structured cabling solutions for offices, buildings, and LGU facilities.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-laptop-medical"></i>
+                <h3>Computer Repair</h3>
+                <p>Expert diagnostic and professional repair for laptops and workstations.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-print"></i>
+                <h3>Printer Repair</h3>
+                <p>Maintenance and repair services for office and industrial printing systems.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-pen-nib"></i>
+                <h3>Logo Design</h3>
+                <p>Branding and visual identity creation tailored to your business goals.</p>
+            </div>
         </div>
     </section>
 
@@ -242,12 +361,12 @@
         </div>
     </section>
 
-    <section id="contact">
+    <!-- <section id="contact">
         <div class="contact-container">
             <h2>Let's Build Something Great</h2>
-            <p>Inquire about custom system development or technical consultation.</p>
+            <p>Inquire about custom system development or technical consultation.</p> -->
             
-            <form action="contact.php" method="POST" class="contact-form">
+            <!-- <form action="contact.php" method="POST" class="contact-form">
                 <div class="form-row">
                     <input type="text" name="name" placeholder="Full Name" required>
                     <input type="email" name="email" placeholder="Email Address" required>
@@ -260,14 +379,19 @@
 
                 <div class="form-row">
                     <input type="text" name="company_address" placeholder="Company Address / Location">
-                </div>
+                </div> -->
 
-                <select name="interest" required>
-                    <option value="" disabled selected>System Interest</option>
-                    <option value="LGU / Barangay Systems">LGU / Barangay Systems</option>
-                    <option value="Healthcare Systems">Medical & Scheduling</option>
-                    <option value="Association Management">HOA & Property</option>
-                    <option value="Custom Web Application">Custom Development</option>
+                <!-- <select name="interest" required>
+                <option value="" disabled selected>System Interest</option>
+                <option value="LGU / Barangay Systems">LGU / Barangay Systems (BIRTS/One ID)</option>
+                <option value="Restaurant POS">Restaurant POS & Kitchen Systems</option>
+                <option value="Pharmacy POS">Pharmacy POS & Inventory</option>
+                <option value="Education Systems">School Management Systems</option>
+                <option value="Property Management">Tenant Billing & HOA Systems</option>
+                <option value="Healthcare Systems">Medical & Scheduling (E-MASS)</option>
+                <option value="Custom Web Application">Custom Website Development</option>
+                <option value="Technical Services">Hardware, Network & Repair Services</option>
+                <option value="Design Services">Logo & Branding Design</option>
                 </select>
 
                 <textarea name="message" rows="5" placeholder="Tell us about your project requirements..." required></textarea>
@@ -275,26 +399,42 @@
                 <button type="submit" class="btn">Send Inquiry</button>
             </form>
         </div>
-    </section>
+    </section> -->
 
-    <footer>
-        <div class="footer-content">
-            <div class="footer-info">
-                <p>&copy; 2026 <strong>Build Bright Software Solution</strong></p>
-                <p><i class="fas fa-map-marker-alt"></i> Dagupan City, PH</p>
-                <p><i class="fas fa-phone"></i> 09175852472</p>
-                <p><i class="fas fa-envelope"></i> buildbrightsoftwaresolution@gmail.com</p>
+    <section id="contact">
+    <div class="contact-container">
+        <div class="badge" style="margin-bottom: 20px;">Get In Touch</div>
+        <h2>Let's Build Something Great</h2>
+        <p>Ready to digitize your operations. Contact us directly for a technical consultation or system demo.</p>
+        
+        <div class="contact-methods">
+            <div class="method-card">
+                <i class="fas fa-building"></i>
+                <span>Company Name</span>
+                <strong>Build Bright Software Solution</strong>
             </div>
-            <div class="socials">
-                <a href="https://www.facebook.com/profile.php?id=61585601410507" 
-                   target="_blank" 
-                   rel="noopener noreferrer" 
-                   aria-label="Facebook">
-                <i class="fab fa-facebook"></i>
-                </a>
-            </div>
+            
+            <a href="mailto:ryancastaneda@rocketmail.com" class="method-card">
+                <i class="fas fa-envelope"></i>
+                <span>Email Address</span>
+                <strong>buildbrightsoftwaresolution@gmail.com</strong>
+            </a>
+            
+            <a href="tel:09175852472" class="method-card">
+                <i class="fas fa-phone-alt"></i>
+                <span>Contact Number</span>
+                <strong>0917-585-2472</strong>
+            </a>
         </div>
-    </footer>
+
+        <div class="social-cta">
+            <p>Follow our latest builds on Facebook</p>
+            <a href="https://www.facebook.com/profile.php?id=61585601410507" target="_blank" class="btn">
+                <i class="fab fa-facebook"></i> Visit Official Page
+            </a>
+        </div>
+    </div>
+</section>
 
     <div id="successModal" class="modal-overlay">
         <div class="modal-content">
