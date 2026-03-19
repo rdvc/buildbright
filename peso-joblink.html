@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PESO JobLink Features | Build Bright Software</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0a0f19; color: #fff; }
+        .glow-text { text-shadow: 0 0 20px rgba(0, 212, 255, 0.5); }
+        .feature-card { background: rgba(26, 31, 43, 0.6); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.05); transition: all 0.3s ease; }
+        .feature-card:hover { border-color: #00d4ff; transform: translateY(-5px); background: rgba(26, 31, 43, 0.9); }
+        .gradient-border { border-image: linear-gradient(to right, #00d4ff, #0055ff) 1; }
+        
+        /* Contact Card Specifics */
+        .contact-card { background: rgba(26, 31, 43, 0.4); border: 1px solid rgba(255,255,255,0.03); transition: all 0.3s ease; }
+        .contact-card:hover { border-color: #00d4ff; background: rgba(26, 31, 43, 0.8); }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <nav class="flex justify-between items-center px-[5%] py-4 fixed w-full top-0 z-50 bg-[#0a0f19]/95 border-b border-white/5">
+        <div class="text-2xl font-black tracking-tighter">Build<span class="text-cyan-400">Bright</span></div>
+        <a href="index.html" class="text-sm font-bold text-slate-400 hover:text-cyan-400 transition">← Back to Portfolio</a>
+    </nav>
+
+    <header class="pt-32 pb-20 px-[5%] text-center relative">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-cyan-500/10 blur-[120px] rounded-full -z-10"></div>
+        <div class="inline-block px-4 py-1.5 mb-6 text-[10px] font-black tracking-[0.3em] text-cyan-400 uppercase bg-cyan-400/10 rounded-full border border-cyan-400/20">System Case Study</div>
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter mb-6">PESO <span class="text-cyan-400 glow-text">JobLink</span></h1>
+        <p class="max-w-2xl mx-auto text-slate-400 text-lg">An integrated LGU employment ecosystem designed to bridge the gap between local talent and industry demand through automated intelligence.</p>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 space-y-32 pb-20">
+
+        <section>
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-12 h-12 bg-cyan-500 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-cyan-500/20">
+                    <i class="fas fa-shield-halved text-xl"></i>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-black tracking-tight">Administrative Command Center</h2>
+                    <p class="text-cyan-400 text-xs font-bold uppercase tracking-widest">LGU Governance & Oversight</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-brain text-3xl text-cyan-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Matching Engine</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Sophisticated scoring algorithm that ranks job seekers based on skills overlap, educational attainment, and geographic location (Barangay-level matching).</p>
+                </div>
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-file-invoice text-3xl text-cyan-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Accreditation System</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Document verification pipeline for employers. Admin can review business permits and logos to ensure only legitimate companies post vacancies.</p>
+                </div>
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-chart-line text-3xl text-cyan-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Labor Analytics</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Real-time reporting on hiring rates, labor supply (seekers) vs demand (vacancies), and gender-disaggregated employment data.</p>
+                </div>
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-user-lock text-3xl text-cyan-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">User Security</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Global user management with the ability to Activate, Deactivate, or Suspend accounts to maintain a safe ecosystem.</p>
+                </div>
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-route text-3xl text-cyan-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Application Tracking</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Monitor every applicant's journey from "Pending" to "Hired" across all city employers in one centralized view.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-12 h-12 bg-emerald-500 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-emerald-500/20">
+                    <i class="fas fa-building text-xl"></i>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-black tracking-tight">Employer Portal</h2>
+                    <p class="text-emerald-400 text-xs font-bold uppercase tracking-widest">Industry Recruitment Tools</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-plus-circle text-3xl text-emerald-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Vacancy Management</h3>
+                    <p class="text-slate-400 text-sm">Post detailed job openings with specific skill requirements, slot counts, and educational criteria.</p>
+                </div>
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-users-viewfinder text-3xl text-emerald-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Applicant Screening</h3>
+                    <p class="text-slate-400 text-sm">View full seeker profiles, educational history, and work experience before making hiring decisions.</p>
+                </div>
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-check-double text-3xl text-emerald-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">One-Click Hiring</h3>
+                    <p class="text-slate-400 text-sm">Update application statuses instantly to "Interview Scheduled", "Hired", or "Rejected", triggering real-time notifications.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-12 h-12 bg-blue-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-blue-600/20">
+                    <i class="fas fa-user-graduate text-xl"></i>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-black tracking-tight">Job Seeker Experience</h2>
+                    <p class="text-blue-400 text-xs font-bold uppercase tracking-widest">Candidate Growth & Networking</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="feature-card p-8 rounded-[2.5rem] border-blue-500/20">
+                    <i class="fas fa-address-card text-3xl text-blue-500 mb-6"></i>
+                    <h3 class="text-lg font-bold mb-2">Digital Resume</h3>
+                    <p class="text-slate-400 text-xs">Integrated profile showcasing education, technical skills, and seminars/trainings.</p>
+                </div>
+                <div class="feature-card p-8 rounded-[2.5rem] border-blue-500/20">
+                    <i class="fas fa-users text-3xl text-blue-500 mb-6"></i>
+                    <h3 class="text-lg font-bold mb-2">Seeker Network</h3>
+                    <p class="text-slate-400 text-xs">Social features to connect and network with other job seekers within the same city.</p>
+                </div>
+                <div class="feature-card p-8 rounded-[2.5rem] border-blue-500/20">
+                    <i class="fas fa-comments text-3xl text-blue-500 mb-6"></i>
+                    <h3 class="text-lg font-bold mb-2">Real-time Chat</h3>
+                    <p class="text-slate-400 text-xs">Internal messaging system with image attachment support for peer-to-peer communication.</p>
+                </div>
+                <div class="feature-card p-8 rounded-[2.5rem] border-blue-500/20">
+                    <i class="fas fa-bell text-3xl text-blue-500 mb-6"></i>
+                    <h3 class="text-lg font-bold mb-2">Job Notifications</h3>
+                    <p class="text-slate-400 text-xs">Instant alerts when an employer updates an application status or shortlists a candidate.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="text-center pt-10">
+            <h2 class="text-sm font-black uppercase tracking-[0.5em] text-slate-500 mb-10">Infrastructure Stack</h2>
+            <div class="flex flex-wrap justify-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all duration-700">
+                <div class="flex items-center gap-2"><i class="fab fa-php text-4xl"></i><span class="font-bold">PHP 8.x</span></div>
+                <div class="flex items-center gap-2"><i class="fas fa-database text-4xl"></i><span class="font-bold">MySQL</span></div>
+                <div class="flex items-center gap-2"><i class="fab fa-js text-4xl"></i><span class="font-bold">Vanilla JS</span></div>
+                <div class="flex items-center gap-2"><i class="fas fa-wind text-4xl"></i><span class="font-bold">Tailwind CSS</span></div>
+            </div>
+        </section>
+
+        <section class="pt-20 border-t border-white/5">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-black tracking-tight mb-4 italic">Let's Build Something Great</h2>
+                <p class="text-slate-400 text-sm">Contact us directly for a technical consultation or a live system demo.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="contact-card p-10 rounded-[2rem] text-center">
+                    <div class="text-cyan-400 text-3xl mb-6"><i class="fas fa-building"></i></div>
+                    <p class="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2">Company</p>
+                    <p class="font-bold text-lg">Build Bright Software Solution</p>
+                </div>
+
+                <a href="mailto:buildbrightsoftwaresolution@gmail.com" class="contact-card p-10 rounded-[2rem] text-center">
+                    <div class="text-cyan-400 text-3xl mb-6"><i class="fas fa-envelope"></i></div>
+                    <p class="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2">Email</p>
+                    <p class="font-bold text-lg break-all">buildbrightsoftwaresolution@gmail.com</p>
+                </a>
+
+                <a href="tel:09175852472" class="contact-card p-10 rounded-[2rem] text-center">
+                    <div class="text-cyan-400 text-3xl mb-6"><i class="fas fa-phone"></i></div>
+                    <p class="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2">Contact</p>
+                    <p class="font-bold text-lg">0917-585-2472</p>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-12 bg-black/40 text-center border-t border-white/5">
+        <p class="text-[10px] font-black text-slate-500 uppercase tracking-[0.5em]">PESO JobLink &bull; Build Bright 2026</p>
+    </footer>
+
+</body>
+</html>
