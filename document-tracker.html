@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GovTrack | Build Bright Software Solution</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .project-hero {
+            background: radial-gradient(circle at center, #24389c 0%, #0a0f19 100%);
+            padding: 100px 20px;
+            text-align: center;
+            position: relative;
+        }
+        .hero-emblem {
+            font-size: 5rem;
+            color: #ba1a1a;
+            filter: drop-shadow(0 0 15px rgba(186, 26, 26, 0.4));
+            margin-bottom: 20px;
+        }
+        .hero-content h1 span { color: #ba1a1a; }
+        .action-pill i { color: #ba1a1a; }
+        .info-card:hover { border-color: #24389c; transform: translateY(-5px); }
+        .info-card i { font-size: 2rem; color: #24389c; margin-bottom: 20px; display: block; }
+        .tech-box { border-left: 4px solid #ba1a1a; background: #0d1117; padding: 25px; border-radius: 10px; }
+        .tech-box i { color: #ba1a1a; margin-right: 10px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Build<span>Bright</span></div>
+        <a href="index.html" class="btn-outline" style="padding: 8px 15px; text-decoration: none; color: #fff; border: 1px solid #24389c; border-radius: 5px;">← Back to Portfolio</a>
+    </nav>
+
+    <header class="project-hero">
+        <div class="hero-content">
+            <div class="hero-emblem"><i class="fas fa-folder-tree"></i></div>
+            <div class="badge" style="display: inline-block; margin-bottom: 15px; color: #fff; background: #ba1a1a; padding: 5px 15px; border-radius: 20px; font-size: 0.8rem; font-weight: bold;">LGU DOCUMENT LOGISTICS</div>
+            <h1>Gov<span>Track</span></h1>
+            <p>A high-security document monitoring system designed for government transparency. Featuring real-time tracking, QR-based routing, and detailed office audit logs.</p>
+            
+            <div class="quick-actions-strip">
+                <div class="action-pill"><i class="fas fa-qrcode"></i> QR Scanner</div>
+                <div class="action-pill"><i class="fas fa-route"></i> Live Timeline</div>
+                <div class="action-pill"><i class="fas fa-file-contract"></i> Archive Management</div>
+                <div class="action-pill"><i class="fas fa-shield-halved"></i> Audit Trail</div>
+            </div>
+        </div>
+    </header>
+
+    <section class="project-info-section">
+        <div class="info-container">
+            
+            <div class="info-block">
+                <h2 style="color: #fff; font-size: 2.5rem;"><i class="fas fa-microchip" style="color: #24389c;"></i> Intelligent Tracking</h2>
+                <p style="color: #8b949e; max-width: 800px; margin: 20px auto;">Eliminate "lost documents" and processing bottlenecks. GovTrack provides a visual, Shopee-style timeline for every government paper, ensuring accountability at every station.</p>
+            </div>
+
+            <div class="info-grid">
+                <div class="info-card">
+                    <i class="fas fa-scanner"></i>
+                    <h3>Integrated QR Logic</h3>
+                    <p>Uses high-speed scanner API to process arrivals and departures with a single beep. Compatible with MP7200 hardware.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-timeline"></i>
+                    <h3>Movement Timeline</h3>
+                    <p>Visual representation of a document's journey from Origin to Final Release, showing timestamps and handlers.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-building-circle-check"></i>
+                    <h3>Office Accountability</h3>
+                    <p>Automatically identifies the logger's office upon login to ensure accurate receiving records.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-file-export"></i>
+                    <h3>Automated Reports</h3>
+                    <p>Generate daily or monthly movement reports with printable audit trails for transparency compliance.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-user-shield"></i>
+                    <h3>Role-Based Access</h3>
+                    <p>Secure authentication for Administrators, Dept. Heads, and Office Staff with specific permission tiers.</p>
+                </div>
+                <div class="info-card">
+                    <i class="fas fa-clock-rotate-left"></i>
+                    <h3>Live Updates</h3>
+                    <p>Dashboard updates in real-time as documents are scanned across different building terminals.</p>
+                </div>
+            </div>
+            
+            <div class="technical-deep-dive" style="margin-top: 40px; background: rgba(36, 56, 156, 0.05); padding: 40px; border-radius: 15px; border: 1px solid rgba(36, 56, 156, 0.1);">
+                <h2 style="color: #fff; margin-bottom: 20px;">Technical Architecture</h2>
+                <div class="details-grid" style="display: grid; grid-template-columns: 2fr 1fr; gap: 40px;">
+                    <div class="details-main">
+                        <p style="color: #8b949e; line-height: 1.8;">GovTrack is built on a high-availability PHP/MySQL stack designed to handle thousands of scan logs daily without latency. The system prioritizes data integrity, ensuring every scan is immutable and timestamped.</p>
+                        <ul style="color: #fff; padding-left: 20px; line-height: 2; margin-top: 20px;">
+                            <li><strong>Session Sync:</strong> Global office identification via secure session handling.</li>
+                            <li><strong>Responsive HUD:</strong> Wide-area scanner interface optimized for terminal tablets.</li>
+                            <li><strong>SQL Relations:</strong> Complex indexing for instant tracking ID retrieval.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tech-box">
+                        <h3 style="color: #24389c; margin-top: 0;">Stack Specs</h3>
+                        <ul style="list-style: none; padding: 0; color: #fff;">
+                            <li style="margin-bottom: 10px;"><i class="fab fa-php"></i> PHP 8.x Core</li>
+                            <li style="margin-bottom: 10px;"><i class="fas fa-database"></i> MySQL / PDO</li>
+                            <li style="margin-bottom: 10px;"><i class="fas fa-expand"></i> Tailwind CSS UI</li>
+                            <li><i class="fas fa-code"></i> HTML5-QRCode API</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer style="padding: 60px 0; background: #0a0f19; border-top: 1px solid #30363d; text-align: center;">
+        <p style="color: #8b949e; font-size: 0.85rem;">&copy; 2026 <strong>Build Bright Software Solution</strong> | Innovating LGU Logistics</p>
+    </footer>
+
+</body>
+</html>
