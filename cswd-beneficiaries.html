@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSWD Beneficiaries Management System | Build Bright Software Solution</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0a0f19; color: #fff; }
+        .glow-text { text-shadow: 0 0 20px rgba(34, 197, 94, 0.5); }
+        .feature-card { background: rgba(26, 31, 43, 0.6); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.05); transition: all 0.3s ease; }
+        .feature-card:hover { border-color: #22c55e; transform: translateY(-5px); background: rgba(26, 31, 43, 0.9); }
+        .contact-card { background: rgba(26, 31, 43, 0.4); border: 1px solid rgba(255,255,255,0.03); transition: all 0.3s ease; }
+        .contact-card:hover { border-color: #22c55e; background: rgba(26, 31, 43, 0.8); }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <nav class="flex justify-between items-center px-[5%] py-4 fixed w-full top-0 z-50 bg-[#0a0f19]/95 border-b border-white/5">
+        <div class="text-2xl font-black tracking-tighter">Build<span class="text-green-400">Bright</span></div>
+        <a href="index.html" class="text-sm font-bold text-slate-400 hover:text-green-400 transition">← Back to Portfolio</a>
+    </nav>
+
+    <header class="pt-32 pb-20 px-[5%] text-center relative">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-green-500/10 blur-[120px] rounded-full -z-10"></div>
+        <div class="inline-block px-4 py-1.5 mb-6 text-[10px] font-black tracking-[0.3em] text-green-400 uppercase bg-green-400/10 rounded-full border border-green-400/20">Social Welfare & Development Technology</div>
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter mb-6">CSWD <span class="text-green-400 glow-text">Beneficiaries</span></h1>
+        <p class="max-w-2xl mx-auto text-slate-400 text-lg">A centralized digital registry for the City/Municipal Social Welfare and Development Office. Manage beneficiary records, aid distributions, and social programs with full accountability.</p>
+
+        <div class="flex flex-wrap justify-center gap-3 mt-10">
+            <div class="flex items-center gap-2 px-4 py-2 bg-green-500/10 border border-green-500/20 rounded-full text-sm text-green-300"><i class="fas fa-users"></i> Beneficiary Registry</div>
+            <div class="flex items-center gap-2 px-4 py-2 bg-green-500/10 border border-green-500/20 rounded-full text-sm text-green-300"><i class="fas fa-hand-holding-heart"></i> Aid Distribution</div>
+            <div class="flex items-center gap-2 px-4 py-2 bg-green-500/10 border border-green-500/20 rounded-full text-sm text-green-300"><i class="fas fa-child"></i> Program Management</div>
+            <div class="flex items-center gap-2 px-4 py-2 bg-green-500/10 border border-green-500/20 rounded-full text-sm text-green-300"><i class="fas fa-chart-area"></i> Welfare Analytics</div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 space-y-32 pb-20">
+
+        <section>
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-12 h-12 bg-green-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-green-600/20">
+                    <i class="fas fa-address-book text-xl"></i>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-black tracking-tight">Beneficiary Registry & Profiling</h2>
+                    <p class="text-green-400 text-xs font-bold uppercase tracking-widest">Centralized Social Welfare Records</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-user-plus text-3xl text-green-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Beneficiary Enrollment</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Digitally onboard indigent families, senior citizens, PWDs, solo parents, and other priority sectors with complete household profiling and socio-economic data.</p>
+                </div>
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-id-card-alt text-3xl text-green-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Digital Beneficiary ID</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Issue unique beneficiary IDs with embedded QR codes for fast identity verification during aid releases and program enrollments.</p>
+                </div>
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-sitemap text-3xl text-green-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Household Mapping</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Link individual beneficiaries to household units. Track all members, their status, and participation in social programs across the family structure.</p>
+                </div>
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-layer-group text-3xl text-green-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Category Classification</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Classify beneficiaries by sector: 4Ps, Senior Citizens, PWDs, Solo Parents, Street Dwellers, AICS Recipients, and custom LGU-defined categories.</p>
+                </div>
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-search text-3xl text-green-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Smart Search & Filter</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Instantly locate any beneficiary by name, barangay, category, or ID. Advanced filters for generating targeted lists for specific program distributions.</p>
+                </div>
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-history text-3xl text-green-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Aid History Ledger</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Complete chronological record of every assistance received per beneficiary: type, date, amount, and releasing officer — ensuring full accountability.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-12 h-12 bg-emerald-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-emerald-600/20">
+                    <i class="fas fa-hand-holding-heart text-xl"></i>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-black tracking-tight">Aid Distribution & Program Management</h2>
+                    <p class="text-emerald-400 text-xs font-bold uppercase tracking-widest">Social Assistance Workflows</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-box-open text-3xl text-emerald-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">AICS Management</h3>
+                    <p class="text-slate-400 text-sm">Manage Assistance to Individuals in Crisis Situation requests — intake, assessment, recommendation, and release — with digital case notes per client.</p>
+                </div>
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-calendar-check text-3xl text-emerald-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Distribution Events</h3>
+                    <p class="text-slate-400 text-sm">Schedule and manage aid distribution activities. Generate master lists, track attendance, and record actual releases in real time.</p>
+                </div>
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-ban text-3xl text-emerald-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Duplicate Prevention</h3>
+                    <p class="text-slate-400 text-sm">Automatic detection of duplicate applications or double-claiming beneficiaries across different programs within the same distribution period.</p>
+                </div>
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-file-alt text-3xl text-emerald-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Social Case Records</h3>
+                    <p class="text-slate-400 text-sm">Manage individual case files for clients requiring intervention. Social workers record case notes, referrals, and case closure status digitally.</p>
+                </div>
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-graduation-cap text-3xl text-emerald-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Scholarship Tracking</h3>
+                    <p class="text-slate-400 text-sm">Track CSWD-administered scholarship grantees, disbursement schedules, academic requirements, and renewal status per scholar.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-12 h-12 bg-teal-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-teal-600/20">
+                    <i class="fas fa-chart-bar text-xl"></i>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-black tracking-tight">Reporting & Welfare Analytics</h2>
+                    <p class="text-teal-400 text-xs font-bold uppercase tracking-widest">Data-Driven Social Development</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-chart-pie text-3xl text-teal-400 mb-6"></i>
+                    <h3 class="text-lg font-bold mb-2">Sector Dashboard</h3>
+                    <p class="text-slate-400 text-xs">Visual breakdowns of beneficiary population by sector, barangay, age group, and economic status for planning and budgeting.</p>
+                </div>
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-file-export text-3xl text-teal-400 mb-6"></i>
+                    <h3 class="text-lg font-bold mb-2">DSWD Reports</h3>
+                    <p class="text-slate-400 text-xs">Auto-generate DSWD-required reports (AICS Utilization, 4Ps Compliance, Social Protection Statistics) from live system data.</p>
+                </div>
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-map-marked-alt text-3xl text-teal-400 mb-6"></i>
+                    <h3 class="text-lg font-bold mb-2">Barangay Heatmap</h3>
+                    <p class="text-slate-400 text-xs">Geographic visualization of beneficiary density and aid distribution across barangays to identify underserved areas.</p>
+                </div>
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-user-shield text-3xl text-teal-400 mb-6"></i>
+                    <h3 class="text-lg font-bold mb-2">Audit Trail</h3>
+                    <p class="text-slate-400 text-xs">Immutable log of all data entries, edits, and releases with timestamps and responsible officer — meeting COA audit requirements.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="text-center pt-10">
+            <h2 class="text-sm font-black uppercase tracking-[0.5em] text-slate-500 mb-10">Infrastructure Stack</h2>
+            <div class="flex flex-wrap justify-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all duration-700">
+                <div class="flex items-center gap-2"><i class="fab fa-php text-4xl"></i><span class="font-bold">PHP 8.x</span></div>
+                <div class="flex items-center gap-2"><i class="fas fa-database text-4xl"></i><span class="font-bold">MySQL</span></div>
+                <div class="flex items-center gap-2"><i class="fab fa-laravel text-4xl"></i><span class="font-bold">Laravel</span></div>
+                <div class="flex items-center gap-2"><i class="fas fa-wind text-4xl"></i><span class="font-bold">Tailwind CSS</span></div>
+            </div>
+        </section>
+
+        <section class="pt-20 border-t border-white/5">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-black tracking-tight mb-4 italic">Let's Build Something Great</h2>
+                <p class="text-slate-400 text-sm">Contact us directly for a technical consultation or a live system demo.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="contact-card p-10 rounded-[2rem] text-center">
+                    <div class="text-green-400 text-3xl mb-6"><i class="fas fa-building"></i></div>
+                    <p class="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2">Company</p>
+                    <p class="font-bold text-lg">Build Bright Software Solution</p>
+                </div>
+                <a href="mailto:buildbrightsoftwaresolution@gmail.com" class="contact-card p-10 rounded-[2rem] text-center">
+                    <div class="text-green-400 text-3xl mb-6"><i class="fas fa-envelope"></i></div>
+                    <p class="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2">Email</p>
+                    <p class="font-bold text-lg break-all">buildbrightsoftwaresolution@gmail.com</p>
+                </a>
+                <a href="tel:09175852472" class="contact-card p-10 rounded-[2rem] text-center">
+                    <div class="text-green-400 text-3xl mb-6"><i class="fas fa-phone"></i></div>
+                    <p class="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2">Contact</p>
+                    <p class="font-bold text-lg">0917-585-2472</p>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-12 bg-black/40 text-center border-t border-white/5">
+        <p class="text-[10px] font-black text-slate-500 uppercase tracking-[0.5em]">CSWD Beneficiaries Management System &bull; Build Bright 2026</p>
+    </footer>
+
+</body>
+</html>

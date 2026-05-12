@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Legislative Management System | Build Bright Software Solution</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0a0f19; color: #fff; }
+        .glow-text { text-shadow: 0 0 20px rgba(168, 85, 247, 0.5); }
+        .feature-card { background: rgba(26, 31, 43, 0.6); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.05); transition: all 0.3s ease; }
+        .feature-card:hover { border-color: #a855f7; transform: translateY(-5px); background: rgba(26, 31, 43, 0.9); }
+        .contact-card { background: rgba(26, 31, 43, 0.4); border: 1px solid rgba(255,255,255,0.03); transition: all 0.3s ease; }
+        .contact-card:hover { border-color: #a855f7; background: rgba(26, 31, 43, 0.8); }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <nav class="flex justify-between items-center px-[5%] py-4 fixed w-full top-0 z-50 bg-[#0a0f19]/95 border-b border-white/5">
+        <div class="text-2xl font-black tracking-tighter">Build<span class="text-purple-400">Bright</span></div>
+        <a href="index.html" class="text-sm font-bold text-slate-400 hover:text-purple-400 transition">← Back to Portfolio</a>
+    </nav>
+
+    <header class="pt-32 pb-20 px-[5%] text-center relative">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-purple-500/10 blur-[120px] rounded-full -z-10"></div>
+        <div class="inline-block px-4 py-1.5 mb-6 text-[10px] font-black tracking-[0.3em] text-purple-400 uppercase bg-purple-400/10 rounded-full border border-purple-400/20">LGU Legislative Technology</div>
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter mb-6">Legislative <span class="text-purple-400 glow-text">Management</span></h1>
+        <p class="max-w-2xl mx-auto text-slate-400 text-lg">A comprehensive digital platform for local legislative bodies. Streamline ordinance filing, resolution tracking, session records, and committee workflows in one secure system.</p>
+
+        <div class="flex flex-wrap justify-center gap-3 mt-10">
+            <div class="flex items-center gap-2 px-4 py-2 bg-purple-500/10 border border-purple-500/20 rounded-full text-sm text-purple-300"><i class="fas fa-scroll"></i> Ordinance Tracking</div>
+            <div class="flex items-center gap-2 px-4 py-2 bg-purple-500/10 border border-purple-500/20 rounded-full text-sm text-purple-300"><i class="fas fa-gavel"></i> Session Records</div>
+            <div class="flex items-center gap-2 px-4 py-2 bg-purple-500/10 border border-purple-500/20 rounded-full text-sm text-purple-300"><i class="fas fa-users"></i> Committee Portal</div>
+            <div class="flex items-center gap-2 px-4 py-2 bg-purple-500/10 border border-purple-500/20 rounded-full text-sm text-purple-300"><i class="fas fa-file-pdf"></i> Auto-generate Docs</div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 space-y-32 pb-20">
+
+        <section>
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-12 h-12 bg-purple-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-purple-600/20">
+                    <i class="fas fa-landmark text-xl"></i>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-black tracking-tight">Legislative Records & Filing</h2>
+                    <p class="text-purple-400 text-xs font-bold uppercase tracking-widest">Ordinances, Resolutions & Measures</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-scroll text-3xl text-purple-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Ordinance Management</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">File, index, and archive city or municipal ordinances with full revision history. Each ordinance is stamped, numbered automatically, and linked to the sponsoring councilor.</p>
+                </div>
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-file-signature text-3xl text-purple-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Resolution Tracking</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Monitor the lifecycle of every resolution — from first reading to final approval or disapproval — with full audit trails and councilor votes on record.</p>
+                </div>
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-inbox text-3xl text-purple-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Referral & Endorsement</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Digitally route measures to standing committees with timestamps. Track endorsements, returns, and final actions at each legislative stage.</p>
+                </div>
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-search text-3xl text-purple-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Legislative Search Engine</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Instantly retrieve any ordinance or resolution by number, title, keyword, or sponsoring legislator. Full-text search across the entire legislative archive.</p>
+                </div>
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-file-pdf text-3xl text-purple-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Auto-Generated Documents</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Automatically produce formatted ordinance templates, committee reports, and official transmittal letters with pre-filled data from the system database.</p>
+                </div>
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-history text-3xl text-purple-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Version Control</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Maintain complete amendment history for every measure. Compare versions side by side and restore previous drafts as needed.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-12 h-12 bg-violet-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-violet-600/20">
+                    <i class="fas fa-gavel text-xl"></i>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-black tracking-tight">Session & Plenary Management</h2>
+                    <p class="text-violet-400 text-xs font-bold uppercase tracking-widest">Meeting Records & Attendance</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-calendar-alt text-3xl text-violet-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Session Scheduler</h3>
+                    <p class="text-slate-400 text-sm">Plan regular, special, and emergency sessions with automatic agenda generation from pending measures.</p>
+                </div>
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-clipboard-list text-3xl text-violet-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Agenda Builder</h3>
+                    <p class="text-slate-400 text-sm">Drag-and-drop agenda creation for each session. Automatically attach relevant documents and assign time slots per item.</p>
+                </div>
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-user-check text-3xl text-violet-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Attendance & Quorum</h3>
+                    <p class="text-slate-400 text-sm">Digital roll call and automatic quorum checking. Records absences, late arrivals, and proxies for official minutes.</p>
+                </div>
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-vote-yea text-3xl text-violet-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Voting Records</h3>
+                    <p class="text-slate-400 text-sm">Capture and archive Ayes, Nayes, and Abstentions per measure. Generate official vote tallies for the minutes.</p>
+                </div>
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-book-open text-3xl text-violet-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Minutes Generator</h3>
+                    <p class="text-slate-400 text-sm">Auto-compile session minutes from attendance, agenda, and vote records. Export to print-ready PDF with official letterhead.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-12 h-12 bg-indigo-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-indigo-600/20">
+                    <i class="fas fa-users-cog text-xl"></i>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-black tracking-tight">Committee & Councilor Portal</h2>
+                    <p class="text-indigo-400 text-xs font-bold uppercase tracking-widest">Profiles, Committees & Accountability</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-id-badge text-3xl text-indigo-400 mb-6"></i>
+                    <h3 class="text-lg font-bold mb-2">Councilor Profiles</h3>
+                    <p class="text-slate-400 text-xs">Complete digital dossier: committee memberships, authored measures, attendance rate, and term history.</p>
+                </div>
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-sitemap text-3xl text-indigo-400 mb-6"></i>
+                    <h3 class="text-lg font-bold mb-2">Committee Tracker</h3>
+                    <p class="text-slate-400 text-xs">Manage standing and special committees, their memberships, scheduled meetings, and pending referrals.</p>
+                </div>
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-chart-bar text-3xl text-indigo-400 mb-6"></i>
+                    <h3 class="text-lg font-bold mb-2">Performance Dashboard</h3>
+                    <p class="text-slate-400 text-xs">Visual analytics on legislative output: ordinances passed per term, session attendance trends, and committee productivity.</p>
+                </div>
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-bell text-3xl text-indigo-400 mb-6"></i>
+                    <h3 class="text-lg font-bold mb-2">Notifications</h3>
+                    <p class="text-slate-400 text-xs">Alert councilors of upcoming sessions, pending committee reports, and measures requiring their action or signature.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="text-center pt-10">
+            <h2 class="text-sm font-black uppercase tracking-[0.5em] text-slate-500 mb-10">Infrastructure Stack</h2>
+            <div class="flex flex-wrap justify-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all duration-700">
+                <div class="flex items-center gap-2"><i class="fab fa-php text-4xl"></i><span class="font-bold">PHP 8.x</span></div>
+                <div class="flex items-center gap-2"><i class="fas fa-database text-4xl"></i><span class="font-bold">MySQL</span></div>
+                <div class="flex items-center gap-2"><i class="fab fa-laravel text-4xl"></i><span class="font-bold">Laravel</span></div>
+                <div class="flex items-center gap-2"><i class="fas fa-wind text-4xl"></i><span class="font-bold">Tailwind CSS</span></div>
+            </div>
+        </section>
+
+        <section class="pt-20 border-t border-white/5">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-black tracking-tight mb-4 italic">Let's Build Something Great</h2>
+                <p class="text-slate-400 text-sm">Contact us directly for a technical consultation or a live system demo.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="contact-card p-10 rounded-[2rem] text-center">
+                    <div class="text-purple-400 text-3xl mb-6"><i class="fas fa-building"></i></div>
+                    <p class="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2">Company</p>
+                    <p class="font-bold text-lg">Build Bright Software Solution</p>
+                </div>
+                <a href="mailto:buildbrightsoftwaresolution@gmail.com" class="contact-card p-10 rounded-[2rem] text-center">
+                    <div class="text-purple-400 text-3xl mb-6"><i class="fas fa-envelope"></i></div>
+                    <p class="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2">Email</p>
+                    <p class="font-bold text-lg break-all">buildbrightsoftwaresolution@gmail.com</p>
+                </a>
+                <a href="tel:09175852472" class="contact-card p-10 rounded-[2rem] text-center">
+                    <div class="text-purple-400 text-3xl mb-6"><i class="fas fa-phone"></i></div>
+                    <p class="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2">Contact</p>
+                    <p class="font-bold text-lg">0917-585-2472</p>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-12 bg-black/40 text-center border-t border-white/5">
+        <p class="text-[10px] font-black text-slate-500 uppercase tracking-[0.5em]">Legislative Management System &bull; Build Bright 2026</p>
+    </footer>
+
+</body>
+</html>

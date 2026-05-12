@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Permit & Licensing System | Build Bright Software Solution</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
+        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0a0f19; color: #fff; }
+        .glow-text { text-shadow: 0 0 20px rgba(234, 179, 8, 0.5); }
+        .feature-card { background: rgba(26, 31, 43, 0.6); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.05); transition: all 0.3s ease; }
+        .feature-card:hover { border-color: #eab308; transform: translateY(-5px); background: rgba(26, 31, 43, 0.9); }
+        .contact-card { background: rgba(26, 31, 43, 0.4); border: 1px solid rgba(255,255,255,0.03); transition: all 0.3s ease; }
+        .contact-card:hover { border-color: #eab308; background: rgba(26, 31, 43, 0.8); }
+    </style>
+</head>
+<body class="overflow-x-hidden">
+
+    <nav class="flex justify-between items-center px-[5%] py-4 fixed w-full top-0 z-50 bg-[#0a0f19]/95 border-b border-white/5">
+        <div class="text-2xl font-black tracking-tighter">Build<span class="text-yellow-400">Bright</span></div>
+        <a href="index.html" class="text-sm font-bold text-slate-400 hover:text-yellow-400 transition">← Back to Portfolio</a>
+    </nav>
+
+    <header class="pt-32 pb-20 px-[5%] text-center relative">
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-yellow-500/10 blur-[120px] rounded-full -z-10"></div>
+        <div class="inline-block px-4 py-1.5 mb-6 text-[10px] font-black tracking-[0.3em] text-yellow-400 uppercase bg-yellow-400/10 rounded-full border border-yellow-400/20">LGU Business Regulation Technology</div>
+        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter mb-6">Business Permit <span class="text-yellow-400 glow-text">&amp; Licensing</span></h1>
+        <p class="max-w-2xl mx-auto text-slate-400 text-lg">An end-to-end digitized platform for LGU business registration, permit renewal, and licensing compliance. Reduce queues, eliminate paper, and accelerate approvals.</p>
+
+        <div class="flex flex-wrap justify-center gap-3 mt-10">
+            <div class="flex items-center gap-2 px-4 py-2 bg-yellow-500/10 border border-yellow-500/20 rounded-full text-sm text-yellow-300"><i class="fas fa-store"></i> Business Registration</div>
+            <div class="flex items-center gap-2 px-4 py-2 bg-yellow-500/10 border border-yellow-500/20 rounded-full text-sm text-yellow-300"><i class="fas fa-sync-alt"></i> Permit Renewal</div>
+            <div class="flex items-center gap-2 px-4 py-2 bg-yellow-500/10 border border-yellow-500/20 rounded-full text-sm text-yellow-300"><i class="fas fa-qrcode"></i> QR Verification</div>
+            <div class="flex items-center gap-2 px-4 py-2 bg-yellow-500/10 border border-yellow-500/20 rounded-full text-sm text-yellow-300"><i class="fas fa-receipt"></i> OR Generation</div>
+        </div>
+    </header>
+
+    <main class="max-w-7xl mx-auto px-4 space-y-32 pb-20">
+
+        <section>
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-12 h-12 bg-yellow-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-yellow-600/20">
+                    <i class="fas fa-file-contract text-xl"></i>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-black tracking-tight">Application & Registration Engine</h2>
+                    <p class="text-yellow-400 text-xs font-bold uppercase tracking-widest">New Business & Renewal Workflows</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-store text-3xl text-yellow-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">New Business Application</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Step-by-step online or counter-based registration for new business applicants. Captures business type, ownership, capitalization, and all required attachments.</p>
+                </div>
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-sync-alt text-3xl text-yellow-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Annual Permit Renewal</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Streamlined renewal process with pre-populated data from the previous year. Automatically flags missing requirements and computes updated fees.</p>
+                </div>
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-tasks text-3xl text-yellow-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Multi-Department Clearance</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Digitally routes applications to BFP, Sanitation, Zoning, and Treasury for clearance. Each department approves or flags with remarks before final release.</p>
+                </div>
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-calculator text-3xl text-yellow-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Automated Fee Computation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Real-time computation of business taxes, regulatory fees, and penalties based on capitalization, business type, and current LGU revenue code.</p>
+                </div>
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-receipt text-3xl text-yellow-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">OR & Permit Generation</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Automatically generate Official Receipts and print-ready Business Permits upon payment confirmation with QR code embedded for authenticity.</p>
+                </div>
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-bell text-3xl text-yellow-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Renewal Reminders</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Automated SMS or email alerts sent to business owners 30, 15, and 7 days before their permit expiration to prevent penalties.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-12 h-12 bg-amber-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-amber-600/20">
+                    <i class="fas fa-shield-halved text-xl"></i>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-black tracking-tight">Inspection & Compliance Tracking</h2>
+                    <p class="text-amber-400 text-xs font-bold uppercase tracking-widest">Monitoring & Enforcement Tools</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-clipboard-check text-3xl text-amber-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Inspection Scheduling</h3>
+                    <p class="text-slate-400 text-sm">Assign and schedule field inspections for new applications. Inspectors submit digital checklist results directly from mobile devices.</p>
+                </div>
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-exclamation-triangle text-3xl text-amber-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Violation Flagging</h3>
+                    <p class="text-slate-400 text-sm">Record non-compliant businesses, issue digital Notice of Violation, and track resolution status until compliance is achieved.</p>
+                </div>
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-qrcode text-3xl text-amber-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">QR Permit Verification</h3>
+                    <p class="text-slate-400 text-sm">Enforcement officers scan the QR code on any business permit to instantly verify authenticity, expiry date, and business details.</p>
+                </div>
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-map-marker-alt text-3xl text-amber-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Business Directory Map</h3>
+                    <p class="text-slate-400 text-sm">Interactive map of all registered businesses by barangay, type, and compliance status for LGU planning and revenue monitoring.</p>
+                </div>
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-chart-pie text-3xl text-amber-400 mb-6"></i>
+                    <h3 class="text-xl font-bold mb-3">Revenue Analytics</h3>
+                    <p class="text-slate-400 text-sm">Real-time dashboards showing tax collections per business type, renewal rates, and projected annual revenue vs. actual collections.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="flex items-center gap-4 mb-12">
+                <div class="w-12 h-12 bg-orange-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-orange-600/20">
+                    <i class="fas fa-user-tie text-xl"></i>
+                </div>
+                <div>
+                    <h2 class="text-3xl font-black tracking-tight">Applicant Self-Service Portal</h2>
+                    <p class="text-orange-400 text-xs font-bold uppercase tracking-widest">Online Application & Status Tracking</p>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-laptop-code text-3xl text-orange-400 mb-6"></i>
+                    <h3 class="text-lg font-bold mb-2">Online Application</h3>
+                    <p class="text-slate-400 text-xs">Business owners apply or renew permits online anytime, uploading requirements and tracking progress without a counter visit.</p>
+                </div>
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-search-dollar text-3xl text-orange-400 mb-6"></i>
+                    <h3 class="text-lg font-bold mb-2">Fee Calculator</h3>
+                    <p class="text-slate-400 text-xs">Applicants can pre-compute their business taxes and fees before submission to prepare payment in advance.</p>
+                </div>
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-hourglass-half text-3xl text-orange-400 mb-6"></i>
+                    <h3 class="text-lg font-bold mb-2">Application Status</h3>
+                    <p class="text-slate-400 text-xs">Real-time status tracking: Under Review, For Inspection, Payment Pending, Approved, or Released — visible to the business owner at all times.</p>
+                </div>
+                <div class="feature-card p-8 rounded-[2.5rem]">
+                    <i class="fas fa-download text-3xl text-orange-400 mb-6"></i>
+                    <h3 class="text-lg font-bold mb-2">Digital Permit Download</h3>
+                    <p class="text-slate-400 text-xs">Approved permits can be downloaded as a PDF with embedded QR code directly from the applicant's portal after payment is confirmed.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="text-center pt-10">
+            <h2 class="text-sm font-black uppercase tracking-[0.5em] text-slate-500 mb-10">Infrastructure Stack</h2>
+            <div class="flex flex-wrap justify-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all duration-700">
+                <div class="flex items-center gap-2"><i class="fab fa-php text-4xl"></i><span class="font-bold">PHP 8.x</span></div>
+                <div class="flex items-center gap-2"><i class="fas fa-database text-4xl"></i><span class="font-bold">MySQL</span></div>
+                <div class="flex items-center gap-2"><i class="fab fa-laravel text-4xl"></i><span class="font-bold">Laravel</span></div>
+                <div class="flex items-center gap-2"><i class="fas fa-wind text-4xl"></i><span class="font-bold">Tailwind CSS</span></div>
+            </div>
+        </section>
+
+        <section class="pt-20 border-t border-white/5">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-black tracking-tight mb-4 italic">Let's Build Something Great</h2>
+                <p class="text-slate-400 text-sm">Contact us directly for a technical consultation or a live system demo.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="contact-card p-10 rounded-[2rem] text-center">
+                    <div class="text-yellow-400 text-3xl mb-6"><i class="fas fa-building"></i></div>
+                    <p class="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2">Company</p>
+                    <p class="font-bold text-lg">Build Bright Software Solution</p>
+                </div>
+                <a href="mailto:buildbrightsoftwaresolution@gmail.com" class="contact-card p-10 rounded-[2rem] text-center">
+                    <div class="text-yellow-400 text-3xl mb-6"><i class="fas fa-envelope"></i></div>
+                    <p class="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2">Email</p>
+                    <p class="font-bold text-lg break-all">buildbrightsoftwaresolution@gmail.com</p>
+                </a>
+                <a href="tel:09175852472" class="contact-card p-10 rounded-[2rem] text-center">
+                    <div class="text-yellow-400 text-3xl mb-6"><i class="fas fa-phone"></i></div>
+                    <p class="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2">Contact</p>
+                    <p class="font-bold text-lg">0917-585-2472</p>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="py-12 bg-black/40 text-center border-t border-white/5">
+        <p class="text-[10px] font-black text-slate-500 uppercase tracking-[0.5em]">Business Permit &amp; Licensing System &bull; Build Bright 2026</p>
+    </footer>
+
+</body>
+</html>
