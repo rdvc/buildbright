@@ -4,134 +4,235 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>School Management System | Build Bright Software Solution</title>
+    <meta name="description" content="An all-in-one administrative platform designed to modernize educational workflows. From paperless enrollment to automated grading and student portals — simplifying the complex operations of modern schools.">
+    <meta name="theme-color" content="#070b13">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0a0f19; color: #fff; }
-        .glow-text { text-shadow: 0 0 20px rgba(99, 102, 241, 0.5); }
-        .feature-card { background: rgba(26, 31, 43, 0.6); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.05); transition: all 0.3s ease; }
-        .feature-card:hover { border-color: #6366f1; transform: translateY(-5px); background: rgba(26, 31, 43, 0.9); }
-        .contact-card { background: rgba(26, 31, 43, 0.4); border: 1px solid rgba(255,255,255,0.03); transition: all 0.3s ease; }
-        .contact-card:hover { border-color: #6366f1; background: rgba(26, 31, 43, 0.8); }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="system.css">
 </head>
-<body class="overflow-x-hidden">
+<body class="sys overflow-x-hidden" style="--accent:#818cf8;--accent-strong:#4f46e5">
 
-    <nav class="flex justify-between items-center px-[5%] py-4 fixed w-full top-0 z-50 bg-[#0a0f19]/95 border-b border-white/5">
-        <div class="text-2xl font-black tracking-tighter">Build<span class="text-indigo-400">Bright</span></div>
-        <a href="index.html" class="text-sm font-bold text-slate-400 hover:text-indigo-400 transition">← Back to Portfolio</a>
+    <nav class="sys-nav">
+        <div class="sys-wrap">
+            <a href="index.html" class="sys-logo">Build<span>Bright</span></a>
+            <div class="sys-crumb"><a href="index.html#projects">Systems</a><i class="fas fa-chevron-right"></i><strong>Bright School</strong></div>
+            <div class="sys-nav-links">
+                <a href="index.html#projects" class="lnk">All Systems</a>
+                <a href="#contact" class="lnk">Contact</a>
+                <a href="mailto:buildbrightsoftwaresolution@gmail.com?subject=Demo%20Request%3A%20Bright%20School" class="sys-btn primary sm"><i class="fas fa-calendar-check"></i> Request Demo</a>
+            </div>
+        </div>
     </nav>
 
-    <header class="pt-32 pb-20 px-[5%] text-center relative">
-        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-indigo-500/10 blur-[120px] rounded-full -z-10"></div>
-        <div class="inline-block px-4 py-1.5 mb-6 text-[10px] font-black tracking-[0.3em] text-indigo-400 uppercase bg-indigo-400/10 rounded-full border border-indigo-400/20">Educational Technology</div>
-        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter mb-6">Bright <span class="text-indigo-400 glow-text">School</span></h1>
-        <p class="max-w-2xl mx-auto text-slate-400 text-lg">An all-in-one administrative platform designed to modernize educational workflows. From paperless enrollment to automated grading and student portals — simplifying the complex operations of modern schools.</p>
-
-        <div class="flex flex-wrap justify-center gap-3 mt-10">
-            <div class="flex items-center gap-2 px-4 py-2 bg-indigo-500/10 border border-indigo-500/20 rounded-full text-sm text-indigo-300"><i class="fas fa-user-plus"></i> Fast Enrollment</div>
-            <div class="flex items-center gap-2 px-4 py-2 bg-indigo-500/10 border border-indigo-500/20 rounded-full text-sm text-indigo-300"><i class="fas fa-file-signature"></i> E-Grading</div>
-            <div class="flex items-center gap-2 px-4 py-2 bg-indigo-500/10 border border-indigo-500/20 rounded-full text-sm text-indigo-300"><i class="fas fa-wallet"></i> Fee Management</div>
-            <div class="flex items-center gap-2 px-4 py-2 bg-indigo-500/10 border border-indigo-500/20 rounded-full text-sm text-indigo-300"><i class="fas fa-user-graduate"></i> Student Portal</div>
+    <header class="sys-hero">
+        <div class="sys-wrap sys-hero-grid">
+            <div>
+                <div class="sys-eyebrow bb-intro" style="--i:0"><span class="dot"></span>Educational Technology</div>
+                <h1 class="bb-intro" style="--i:1">Bright <span class="text-indigo-400 glow-text">School</span></h1>
+                <p class="sys-lead bb-intro" style="--i:2">An all-in-one administrative platform designed to modernize educational workflows. From paperless enrollment to automated grading and student portals — simplifying the complex operations of modern schools.</p>
+                <div class="sys-cta-row bb-intro" style="--i:3">
+                    <a href="mailto:buildbrightsoftwaresolution@gmail.com?subject=Demo%20Request%3A%20Bright%20School" class="sys-btn primary"><i class="fas fa-play"></i> Request a Live Demo</a>
+                    <a href="#academic-student-management" class="sys-btn ghost">Explore Features <i class="fas fa-arrow-down"></i></a>
+                </div>
+                <div class="sys-chips bb-intro" style="--i:4">
+                    <span class="sys-chip"><i class="fas fa-user-plus"></i> Fast Enrollment</span>
+                    <span class="sys-chip"><i class="fas fa-file-signature"></i> E-Grading</span>
+                    <span class="sys-chip"><i class="fas fa-wallet"></i> Fee Management</span>
+                    <span class="sys-chip"><i class="fas fa-user-graduate"></i> Student Portal</span>
+                </div>
+            </div>
+            <div class="sys-preview bb-intro" style="--i:3" aria-hidden="true">
+                <div class="sys-preview-inner">
+                    <div class="pv-bar"><i></i><i></i><i></i><span><i class="fas fa-lock" style="color:#34d399;font-size:.6rem;margin-right:6px"></i>Bright School · Dashboard</span></div>
+                    <div class="pv-body">
+                        <div class="pv-side">
+                            <div class="on"><i class="fas fa-graduation-cap"></i>Academic & Student Management</div>
+                        </div>
+                        <div class="pv-main">
+                            <div class="pv-title">Bright School<small>Enrollment, Grading & Attendance</small></div>
+                            <div class="pv-tiles">
+                                <div class="pv-tile"><i class="fas fa-user-plus"></i><b></b><em>Fast Enrollment</em></div>
+                                <div class="pv-tile"><i class="fas fa-file-signature"></i><b></b><em>E-Grading</em></div>
+                                <div class="pv-tile"><i class="fas fa-wallet"></i><b></b><em>Fee Management</em></div>
+                            </div>
+                            <div class="pv-chart"><span style="height:42%;animation-delay:0.6s"></span><span style="height:64%;animation-delay:0.6699999999999999s"></span><span style="height:50%;animation-delay:0.74s"></span><span style="height:78%;animation-delay:0.81s"></span><span style="height:58%;animation-delay:0.88s"></span><span style="height:88%;animation-delay:0.95s"></span><span style="height:70%;animation-delay:1.02s"></span><span style="height:95%;animation-delay:1.09s"></span></div>
+                            <div class="pv-rows"><div><b></b><s>Active</s></div><div><b style="flex:.7"></b><s>Synced</s></div><div><b style="flex:.85"></b><s>New</s></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
-    <main class="max-w-7xl mx-auto px-4 space-y-32 pb-20">
+    <div class="sys-tabs">
+        <div class="sys-wrap">
+            <a href="#academic-student-management">Academic & Student Management</a>
+            <a href="#stack">Technology</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
 
-        <section>
-            <div class="flex items-center gap-4 mb-12">
-                <div class="w-12 h-12 bg-indigo-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-indigo-600/20">
-                    <i class="fas fa-graduation-cap text-xl"></i>
+    <main class="sys-main">
+        <div class="sys-wrap">
+
+            <section class="sys-section" id="academic-student-management">
+                <div class="sys-sec-head" data-reveal="up">
+                    <div>
+                        <div class="num">01 / 01</div>
+                        <h2>Academic & Student Management</h2>
+                        <p>Enrollment, Grading & Attendance</p>
+                    </div>
+                    <div class="sys-sec-icon"><i class="fas fa-graduation-cap"></i></div>
                 </div>
-                <div>
-                    <h2 class="text-3xl font-black tracking-tight">Academic & Student Management</h2>
-                    <p class="text-indigo-400 text-xs font-bold uppercase tracking-widest">Enrollment, Grading & Attendance</p>
-                </div>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="feature-card p-8 rounded-[2.5rem]">
-                    <i class="fas fa-address-book text-3xl text-indigo-400 mb-6"></i>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="feature-card" data-reveal="up" style="--d:0">
+                    <span class="fc-icon"><i class="fas fa-address-book"></i></span>
                     <h3 class="text-xl font-bold mb-3">Digital Enrollment</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">Automated admission process with document uploading and student profile creation. Reduces physical queues and eliminates paper forms entirely.</p>
                 </div>
-                <div class="feature-card p-8 rounded-[2.5rem]">
-                    <i class="fas fa-calendar-check text-3xl text-indigo-400 mb-6"></i>
+                <div class="feature-card" data-reveal="up" style="--d:1">
+                    <span class="fc-icon"><i class="fas fa-calendar-check"></i></span>
                     <h3 class="text-xl font-bold mb-3">Attendance Tracking</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">Track daily student attendance with automated SMS notifications for parents when a student is absent. Generates monthly attendance reports per class.</p>
                 </div>
-                <div class="feature-card p-8 rounded-[2.5rem]">
-                    <i class="fas fa-pen-to-square text-3xl text-indigo-400 mb-6"></i>
+                <div class="feature-card" data-reveal="up" style="--d:2">
+                    <span class="fc-icon"><i class="fas fa-pen-to-square"></i></span>
                     <h3 class="text-xl font-bold mb-3">Automated Grading</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">Easy grade encoding for teachers with automatic GWA computation and class ranking. Generates printable report cards formatted to DepEd standards.</p>
                 </div>
-                <div class="feature-card p-8 rounded-[2.5rem]">
-                    <i class="fas fa-money-check-dollar text-3xl text-indigo-400 mb-6"></i>
+                <div class="feature-card" data-reveal="up" style="--d:0">
+                    <span class="fc-icon"><i class="fas fa-money-check-dollar"></i></span>
                     <h3 class="text-xl font-bold mb-3">Financial Dashboard</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">Manage tuition fees, miscellaneous charges, and scholarship grants with full payment history, balance tracking, and official receipt generation.</p>
                 </div>
-                <div class="feature-card p-8 rounded-[2.5rem]">
-                    <i class="fas fa-chalkboard-user text-3xl text-indigo-400 mb-6"></i>
+                <div class="feature-card" data-reveal="up" style="--d:1">
+                    <span class="fc-icon"><i class="fas fa-chalkboard-user"></i></span>
                     <h3 class="text-xl font-bold mb-3">Faculty Portal</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">Dedicated space for teachers to manage class schedules, upload lesson plans, encode grades, and monitor student performance metrics.</p>
                 </div>
-                <div class="feature-card p-8 rounded-[2.5rem]">
-                    <i class="fas fa-book text-3xl text-indigo-400 mb-6"></i>
+                <div class="feature-card" data-reveal="up" style="--d:2">
+                    <span class="fc-icon"><i class="fas fa-book"></i></span>
                     <h3 class="text-xl font-bold mb-3">Library Management</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">Digital book cataloging with borrower tracking, return date monitoring, and automated fine calculations for overdue materials.</p>
                 </div>
-                <div class="feature-card p-8 rounded-[2.5rem]">
-                    <i class="fas fa-user-graduate text-3xl text-indigo-400 mb-6"></i>
+                <div class="feature-card" data-reveal="up" style="--d:0">
+                    <span class="fc-icon"><i class="fas fa-user-graduate"></i></span>
                     <h3 class="text-xl font-bold mb-3">Student Portal</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">Secure student login to view grades, download study materials, check financial balance, and track enrollment status from any device.</p>
                 </div>
-                <div class="feature-card p-8 rounded-[2.5rem]">
-                    <i class="fas fa-print text-3xl text-indigo-400 mb-6"></i>
+                <div class="feature-card" data-reveal="up" style="--d:1">
+                    <span class="fc-icon"><i class="fas fa-print"></i></span>
                     <h3 class="text-xl font-bold mb-3">Certificate Generation</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">One-click generation of Certificates of Enrollment, Good Moral, and Transcript of Records (TOR) with official school letterhead.</p>
                 </div>
             </div>
-        </section>
+            </section>
 
-        <section class="text-center pt-10">
-            <h2 class="text-sm font-black uppercase tracking-[0.5em] text-slate-500 mb-10">Infrastructure Stack</h2>
-            <div class="flex flex-wrap justify-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all duration-700">
-                <div class="flex items-center gap-2"><i class="fab fa-laravel text-4xl"></i><span class="font-bold">Laravel</span></div>
-                <div class="flex items-center gap-2"><i class="fas fa-database text-4xl"></i><span class="font-bold">MySQL</span></div>
-                <div class="flex items-center gap-2"><i class="fas fa-network-wired text-4xl"></i><span class="font-bold">API-Ready</span></div>
-                <div class="flex items-center gap-2"><i class="fas fa-lock text-4xl"></i><span class="font-bold">SSL / RBAC</span></div>
-            </div>
-        </section>
-
-        <section class="pt-20 border-t border-white/5">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-black tracking-tight mb-4 italic">Let's Build Something Great</h2>
-                <p class="text-slate-400 text-sm">Contact us directly for a technical consultation or a custom system demo for your school.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="contact-card p-10 rounded-[2rem] text-center">
-                    <div class="text-indigo-400 text-3xl mb-6"><i class="fas fa-building"></i></div>
-                    <p class="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2">Company</p>
-                    <p class="font-bold text-lg">Build Bright Software Solution</p>
+            <section class="sys-stack" id="stack">
+                <div class="sys-label" data-reveal="up">Built With</div>
+                <div class="sys-stack-row">
+                    <div class="sys-stack-item" data-reveal="zoom" style="--d:0"><i class="fab fa-laravel"></i>Laravel</div>
+                    <div class="sys-stack-item" data-reveal="zoom" style="--d:1"><i class="fas fa-database"></i>MySQL</div>
+                    <div class="sys-stack-item" data-reveal="zoom" style="--d:2"><i class="fas fa-network-wired"></i>API-Ready</div>
+                    <div class="sys-stack-item" data-reveal="zoom" style="--d:3"><i class="fas fa-lock"></i>SSL / RBAC</div>
                 </div>
-                <a href="mailto:buildbrightsoftwaresolution@gmail.com" class="contact-card p-10 rounded-[2rem] text-center">
-                    <div class="text-indigo-400 text-3xl mb-6"><i class="fas fa-envelope"></i></div>
-                    <p class="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2">Email</p>
-                    <p class="font-bold text-lg break-all">buildbrightsoftwaresolution@gmail.com</p>
-                </a>
-                <a href="tel:09175852472" class="contact-card p-10 rounded-[2rem] text-center">
-                    <div class="text-indigo-400 text-3xl mb-6"><i class="fas fa-phone"></i></div>
-                    <p class="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2">Contact</p>
-                    <p class="font-bold text-lg">0917-585-2472</p>
-                </a>
-            </div>
-        </section>
+            </section>
 
+            <section class="sys-cta" data-reveal="zoom">
+                <div>
+                    <h2>Ready to deploy Bright School in your organization?</h2>
+                    <p>Book a walkthrough with our team. We'll show you the system live and talk through setup, data migration and training for your staff.</p>
+                </div>
+                <div class="sys-cta-row">
+                    <a href="mailto:buildbrightsoftwaresolution@gmail.com?subject=Demo%20Request%3A%20Bright%20School" class="sys-btn primary"><i class="fas fa-calendar-check"></i> Request a Demo</a>
+                    <a href="tel:09175852472" class="sys-btn ghost"><i class="fas fa-phone"></i> Call Us</a>
+                </div>
+            </section>
+
+            <section class="sys-contact" id="contact">
+                <div class="sys-label" data-reveal="up">Get In Touch</div>
+                <div class="sys-contact-grid">
+                    <div class="sys-contact-card" data-reveal="up" style="--d:0"><div class="ic"><i class="fas fa-building"></i></div><div><small>Company</small><strong>Build Bright Software Solution</strong></div></div>
+                    <a href="mailto:buildbrightsoftwaresolution@gmail.com" class="sys-contact-card" data-reveal="up" style="--d:1"><div class="ic"><i class="fas fa-envelope"></i></div><div><small>Email</small><strong>buildbrightsoftwaresolution@gmail.com</strong></div></a>
+                    <a href="tel:09175852472" class="sys-contact-card" data-reveal="up" style="--d:2"><div class="ic"><i class="fas fa-phone"></i></div><div><small>Phone</small><strong>0917-585-2472</strong></div></a>
+                </div>
+            </section>
+
+            <section class="sys-related">
+                <div class="sys-related-head" data-reveal="up">
+                    <h2>Explore more business systems</h2>
+                    <a href="index.html#projects">View all systems <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="sys-related-grid">
+                    <a href="tenant-billing.html" class="sys-rel-card" data-reveal="up" style="--d:0"><div class="ic"><i class="fas fa-file-invoice-dollar"></i></div><h3>Tenant Billing System</h3><p>Automated rental and utility billing for property owners and stall management.</p><span>Learn more <i class="fas fa-arrow-right"></i></span></a>
+                    <a href="e-mass.html" class="sys-rel-card" data-reveal="up" style="--d:1"><div class="ic"><i class="fas fa-hospital-user"></i></div><h3>E-MASS</h3><p>Electronic Medical Appointment Scheduling System for streamlined healthcare booking.</p><span>Learn more <i class="fas fa-arrow-right"></i></span></a>
+                    <a href="hms.html" class="sys-rel-card" data-reveal="up" style="--d:2"><div class="ic"><i class="fas fa-hospital"></i></div><h3>HMS</h3><p>Hospital Management System covering patient records, lab, pharmacy, admissions, and billing.</p><span>Learn more <i class="fas fa-arrow-right"></i></span></a>
+                </div>
+            </section>
+        </div>
     </main>
 
-    <footer class="py-12 bg-black/40 text-center border-t border-white/5">
-        <p class="text-[10px] font-black text-slate-500 uppercase tracking-[0.5em]">School Management System &bull; Build Bright 2026</p>
+    <footer class="sys-footer">
+        <div class="sys-wrap">
+            <div class="sys-foot-grid">
+                <div>
+                    <a href="index.html" class="sys-logo">Build<span>Bright</span></a>
+                    <p>Secure, scalable systems for local government units and modern businesses.</p>
+                    <div class="sys-social">
+                        <a href="https://www.facebook.com/profile.php?id=61585601410507" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="mailto:buildbrightsoftwaresolution@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="tel:09175852472" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Government</h4>
+                    <ul>
+                        <li><a href="document-tracker.html">GovTrack</a></li>
+                        <li><a href="peso-joblink.html">PESO JobLink</a></li>
+                        <li><a href="one-id.html">One ID</a></li>
+                        <li><a href="birts.html">BIRTS</a></li>
+                        <li><a href="geo-mapping.html">Geo Mapping</a></li>
+                        <li><a href="legislative-management.html">Legislative Management System</a></li>
+                        <li><a href="business-permit.html">Business Permit & Licensing System</a></li>
+                        <li><a href="cswd-beneficiaries.html">CSWD Beneficiaries Management</a></li>
+                        <li><a href="civil-registry.html">Civil Registry Online System</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Business &amp; Enterprise</h4>
+                    <ul>
+                        <li><a href="restaurant-pos.html">Restaurant POS</a></li>
+                        <li><a href="pharmacy-pos.html">Pharmacy POS & Inventory</a></li>
+                        <li><a href="school-management.html" class="current">School Management</a></li>
+                        <li><a href="tenant-billing.html">Tenant Billing System</a></li>
+                        <li><a href="e-mass.html">E-MASS</a></li>
+                        <li><a href="hms.html">HMS</a></li>
+                        <li><a href="crewlink.html">Crewlink Management</a></li>
+                        <li><a href="hoa.html">HOA Management</a></li>
+                        <li><a href="website-development.html">Web Development</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#projects">All Systems</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sys-foot-bottom">
+                <span>&copy; <span class="bb-year">2026</span> Build Bright Software Solution. All rights reserved.</span>
+                <span>Bright School</span>
+            </div>
+        </div>
     </footer>
 
+    <script src="animations.js"></script>
 </body>
 </html>

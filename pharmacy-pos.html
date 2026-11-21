@@ -4,134 +4,235 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pharmacy POS & Inventory | Build Bright Software Solution</title>
+    <meta name="description" content="A high-precision medical retail platform engineered to manage drug classifications, expiration tracking, and regulatory compliance while maintaining a fast-paced retail workflow.">
+    <meta name="theme-color" content="#070b13">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0a0f19; color: #fff; }
-        .glow-text { text-shadow: 0 0 20px rgba(244, 63, 94, 0.5); }
-        .feature-card { background: rgba(26, 31, 43, 0.6); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.05); transition: all 0.3s ease; }
-        .feature-card:hover { border-color: #f43f5e; transform: translateY(-5px); background: rgba(26, 31, 43, 0.9); }
-        .contact-card { background: rgba(26, 31, 43, 0.4); border: 1px solid rgba(255,255,255,0.03); transition: all 0.3s ease; }
-        .contact-card:hover { border-color: #f43f5e; background: rgba(26, 31, 43, 0.8); }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="system.css">
 </head>
-<body class="overflow-x-hidden">
+<body class="sys overflow-x-hidden" style="--accent:#fb7185;--accent-strong:#e11d48">
 
-    <nav class="flex justify-between items-center px-[5%] py-4 fixed w-full top-0 z-50 bg-[#0a0f19]/95 border-b border-white/5">
-        <div class="text-2xl font-black tracking-tighter">Build<span class="text-rose-400">Bright</span></div>
-        <a href="index.html" class="text-sm font-bold text-slate-400 hover:text-rose-400 transition">← Back to Portfolio</a>
+    <nav class="sys-nav">
+        <div class="sys-wrap">
+            <a href="index.html" class="sys-logo">Build<span>Bright</span></a>
+            <div class="sys-crumb"><a href="index.html#projects">Systems</a><i class="fas fa-chevron-right"></i><strong>Pharmacy POS</strong></div>
+            <div class="sys-nav-links">
+                <a href="index.html#projects" class="lnk">All Systems</a>
+                <a href="#contact" class="lnk">Contact</a>
+                <a href="mailto:buildbrightsoftwaresolution@gmail.com?subject=Demo%20Request%3A%20Pharmacy%20POS" class="sys-btn primary sm"><i class="fas fa-calendar-check"></i> Request Demo</a>
+            </div>
+        </div>
     </nav>
 
-    <header class="pt-32 pb-20 px-[5%] text-center relative">
-        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-rose-500/10 blur-[120px] rounded-full -z-10"></div>
-        <div class="inline-block px-4 py-1.5 mb-6 text-[10px] font-black tracking-[0.3em] text-rose-400 uppercase bg-rose-400/10 rounded-full border border-rose-400/20">Healthcare Retail Technology</div>
-        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter mb-6">Pharmacy <span class="text-rose-400 glow-text">POS</span></h1>
-        <p class="max-w-2xl mx-auto text-slate-400 text-lg">A high-precision medical retail platform engineered to manage drug classifications, expiration tracking, and regulatory compliance while maintaining a fast-paced retail workflow.</p>
-
-        <div class="flex flex-wrap justify-center gap-3 mt-10">
-            <div class="flex items-center gap-2 px-4 py-2 bg-rose-500/10 border border-rose-500/20 rounded-full text-sm text-rose-300"><i class="fas fa-hourglass-end"></i> Expiry Tracking</div>
-            <div class="flex items-center gap-2 px-4 py-2 bg-rose-500/10 border border-rose-500/20 rounded-full text-sm text-rose-300"><i class="fas fa-barcode"></i> Batch Inventory</div>
-            <div class="flex items-center gap-2 px-4 py-2 bg-rose-500/10 border border-rose-500/20 rounded-full text-sm text-rose-300"><i class="fas fa-file-prescription"></i> Generic Mapping</div>
-            <div class="flex items-center gap-2 px-4 py-2 bg-rose-500/10 border border-rose-500/20 rounded-full text-sm text-rose-300"><i class="fas fa-chart-pie"></i> Profit Analytics</div>
+    <header class="sys-hero">
+        <div class="sys-wrap sys-hero-grid">
+            <div>
+                <div class="sys-eyebrow bb-intro" style="--i:0"><span class="dot"></span>Healthcare Retail Technology</div>
+                <h1 class="bb-intro" style="--i:1">Pharmacy <span class="text-rose-400 glow-text">POS</span></h1>
+                <p class="sys-lead bb-intro" style="--i:2">A high-precision medical retail platform engineered to manage drug classifications, expiration tracking, and regulatory compliance while maintaining a fast-paced retail workflow.</p>
+                <div class="sys-cta-row bb-intro" style="--i:3">
+                    <a href="mailto:buildbrightsoftwaresolution@gmail.com?subject=Demo%20Request%3A%20Pharmacy%20POS" class="sys-btn primary"><i class="fas fa-play"></i> Request a Live Demo</a>
+                    <a href="#precision-retail-inventory-control" class="sys-btn ghost">Explore Features <i class="fas fa-arrow-down"></i></a>
+                </div>
+                <div class="sys-chips bb-intro" style="--i:4">
+                    <span class="sys-chip"><i class="fas fa-hourglass-end"></i> Expiry Tracking</span>
+                    <span class="sys-chip"><i class="fas fa-barcode"></i> Batch Inventory</span>
+                    <span class="sys-chip"><i class="fas fa-file-prescription"></i> Generic Mapping</span>
+                    <span class="sys-chip"><i class="fas fa-chart-pie"></i> Profit Analytics</span>
+                </div>
+            </div>
+            <div class="sys-preview bb-intro" style="--i:3" aria-hidden="true">
+                <div class="sys-preview-inner">
+                    <div class="pv-bar"><i></i><i></i><i></i><span><i class="fas fa-lock" style="color:#34d399;font-size:.6rem;margin-right:6px"></i>Pharmacy POS · Dashboard</span></div>
+                    <div class="pv-body">
+                        <div class="pv-side">
+                            <div class="on"><i class="fas fa-prescription-bottle-medical"></i>Precision Retail & Inventory Control</div>
+                        </div>
+                        <div class="pv-main">
+                            <div class="pv-title">Pharmacy POS<small>Drug Management & Sales Processing</small></div>
+                            <div class="pv-tiles">
+                                <div class="pv-tile"><i class="fas fa-hourglass-end"></i><b></b><em>Expiry Tracking</em></div>
+                                <div class="pv-tile"><i class="fas fa-barcode"></i><b></b><em>Batch Inventory</em></div>
+                                <div class="pv-tile"><i class="fas fa-file-prescription"></i><b></b><em>Generic Mapping</em></div>
+                            </div>
+                            <div class="pv-chart"><span style="height:42%;animation-delay:0.6s"></span><span style="height:64%;animation-delay:0.6699999999999999s"></span><span style="height:50%;animation-delay:0.74s"></span><span style="height:78%;animation-delay:0.81s"></span><span style="height:58%;animation-delay:0.88s"></span><span style="height:88%;animation-delay:0.95s"></span><span style="height:70%;animation-delay:1.02s"></span><span style="height:95%;animation-delay:1.09s"></span></div>
+                            <div class="pv-rows"><div><b></b><s>Active</s></div><div><b style="flex:.7"></b><s>Synced</s></div><div><b style="flex:.85"></b><s>New</s></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
-    <main class="max-w-7xl mx-auto px-4 space-y-32 pb-20">
+    <div class="sys-tabs">
+        <div class="sys-wrap">
+            <a href="#precision-retail-inventory-control">Precision Retail & Inventory Control</a>
+            <a href="#stack">Technology</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
 
-        <section>
-            <div class="flex items-center gap-4 mb-12">
-                <div class="w-12 h-12 bg-rose-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-rose-600/20">
-                    <i class="fas fa-prescription-bottle-medical text-xl"></i>
+    <main class="sys-main">
+        <div class="sys-wrap">
+
+            <section class="sys-section" id="precision-retail-inventory-control">
+                <div class="sys-sec-head" data-reveal="up">
+                    <div>
+                        <div class="num">01 / 01</div>
+                        <h2>Precision Retail & Inventory Control</h2>
+                        <p>Drug Management & Sales Processing</p>
+                    </div>
+                    <div class="sys-sec-icon"><i class="fas fa-prescription-bottle-medical"></i></div>
                 </div>
-                <div>
-                    <h2 class="text-3xl font-black tracking-tight">Precision Retail & Inventory Control</h2>
-                    <p class="text-rose-400 text-xs font-bold uppercase tracking-widest">Drug Management & Sales Processing</p>
-                </div>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="feature-card p-8 rounded-[2.5rem]">
-                    <i class="fas fa-magnifying-glass-plus text-3xl text-rose-400 mb-6"></i>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="feature-card" data-reveal="up" style="--d:0">
+                    <span class="fc-icon"><i class="fas fa-magnifying-glass-plus"></i></span>
                     <h3 class="text-xl font-bold mb-3">Generic Substitution</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">Search by generic name to find equivalent brands instantly. Help customers access affordable medication with accurate alternatives from your stock.</p>
                 </div>
-                <div class="feature-card p-8 rounded-[2.5rem]">
-                    <i class="fas fa-calendar-circle-exclamation text-3xl text-rose-400 mb-6"></i>
+                <div class="feature-card" data-reveal="up" style="--d:1">
+                    <span class="fc-icon"><i class="fas fa-calendar-xmark"></i></span>
                     <h3 class="text-xl font-bold mb-3">FEFO Inventory</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">First-Expiry, First-Out (FEFO) logic ensures that oldest stock is always sold first, minimizing waste and preventing expired medication from reaching customers.</p>
                 </div>
-                <div class="feature-card p-8 rounded-[2.5rem]">
-                    <i class="fas fa-tags text-3xl text-rose-400 mb-6"></i>
+                <div class="feature-card" data-reveal="up" style="--d:2">
+                    <span class="fc-icon"><i class="fas fa-tags"></i></span>
                     <h3 class="text-xl font-bold mb-3">Retail & Wholesale Pricing</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">Flexible pricing for single tablets, strips, or full boxes. Automatically recalculates inventory units based on the packaging sold at the counter.</p>
                 </div>
-                <div class="feature-card p-8 rounded-[2.5rem]">
-                    <i class="fas fa-bell text-3xl text-rose-400 mb-6"></i>
+                <div class="feature-card" data-reveal="up" style="--d:0">
+                    <span class="fc-icon"><i class="fas fa-bell"></i></span>
                     <h3 class="text-xl font-bold mb-3">Expiration Alerts</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">Automated dashboard notifications for items nearing their 30, 60, or 90-day expiration window. Prevents expired stock from remaining on shelves.</p>
                 </div>
-                <div class="feature-card p-8 rounded-[2.5rem]">
-                    <i class="fas fa-id-card-clip text-3xl text-rose-400 mb-6"></i>
+                <div class="feature-card" data-reveal="up" style="--d:1">
+                    <span class="fc-icon"><i class="fas fa-id-card-clip"></i></span>
                     <h3 class="text-xl font-bold mb-3">SC & PWD Discounts</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">Standardized calculation for Senior Citizens and PWD discounts with full audit logs for tax reporting and DSWD compliance documentation.</p>
                 </div>
-                <div class="feature-card p-8 rounded-[2.5rem]">
-                    <i class="fas fa-clipboard-check text-3xl text-rose-400 mb-6"></i>
+                <div class="feature-card" data-reveal="up" style="--d:2">
+                    <span class="fc-icon"><i class="fas fa-clipboard-check"></i></span>
                     <h3 class="text-xl font-bold mb-3">FDA-Ready Reports</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">Generate mandated reports for dangerous drugs and sensitive inventory items with a single click, formatted to regulatory requirements.</p>
                 </div>
-                <div class="feature-card p-8 rounded-[2.5rem]">
-                    <i class="fas fa-truck-ramp-box text-3xl text-rose-400 mb-6"></i>
+                <div class="feature-card" data-reveal="up" style="--d:0">
+                    <span class="fc-icon"><i class="fas fa-truck-ramp-box"></i></span>
                     <h3 class="text-xl font-bold mb-3">Supplier Management</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">Track purchase orders and restock history. Maintain detailed relationship logs with distributors and monitor delivery timelines.</p>
                 </div>
-                <div class="feature-card p-8 rounded-[2.5rem]">
-                    <i class="fas fa-chart-pie text-3xl text-rose-400 mb-6"></i>
+                <div class="feature-card" data-reveal="up" style="--d:1">
+                    <span class="fc-icon"><i class="fas fa-chart-pie"></i></span>
                     <h3 class="text-xl font-bold mb-3">Profit Analytics</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">Detailed reports on cost vs. retail price per item. Understand your pharmacy's real-time margin by product, category, and supplier.</p>
                 </div>
             </div>
-        </section>
+            </section>
 
-        <section class="text-center pt-10">
-            <h2 class="text-sm font-black uppercase tracking-[0.5em] text-slate-500 mb-10">Infrastructure Stack</h2>
-            <div class="flex flex-wrap justify-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all duration-700">
-                <div class="flex items-center gap-2"><i class="fab fa-laravel text-4xl"></i><span class="font-bold">Laravel 10+</span></div>
-                <div class="flex items-center gap-2"><i class="fas fa-database text-4xl"></i><span class="font-bold">MySQL</span></div>
-                <div class="flex items-center gap-2"><i class="fas fa-barcode text-4xl"></i><span class="font-bold">Barcode Ready</span></div>
-                <div class="flex items-center gap-2"><i class="fas fa-user-shield text-4xl"></i><span class="font-bold">Audit Logs</span></div>
-            </div>
-        </section>
-
-        <section class="pt-20 border-t border-white/5">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-black tracking-tight mb-4 italic">Let's Build Something Great</h2>
-                <p class="text-slate-400 text-sm">Contact us directly for a technical consultation or a live system demo.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="contact-card p-10 rounded-[2rem] text-center">
-                    <div class="text-rose-400 text-3xl mb-6"><i class="fas fa-building"></i></div>
-                    <p class="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2">Company</p>
-                    <p class="font-bold text-lg">Build Bright Software Solution</p>
+            <section class="sys-stack" id="stack">
+                <div class="sys-label" data-reveal="up">Built With</div>
+                <div class="sys-stack-row">
+                    <div class="sys-stack-item" data-reveal="zoom" style="--d:0"><i class="fab fa-laravel"></i>Laravel 10+</div>
+                    <div class="sys-stack-item" data-reveal="zoom" style="--d:1"><i class="fas fa-database"></i>MySQL</div>
+                    <div class="sys-stack-item" data-reveal="zoom" style="--d:2"><i class="fas fa-barcode"></i>Barcode Ready</div>
+                    <div class="sys-stack-item" data-reveal="zoom" style="--d:3"><i class="fas fa-user-shield"></i>Audit Logs</div>
                 </div>
-                <a href="mailto:buildbrightsoftwaresolution@gmail.com" class="contact-card p-10 rounded-[2rem] text-center">
-                    <div class="text-rose-400 text-3xl mb-6"><i class="fas fa-envelope"></i></div>
-                    <p class="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2">Email</p>
-                    <p class="font-bold text-lg break-all">buildbrightsoftwaresolution@gmail.com</p>
-                </a>
-                <a href="tel:09175852472" class="contact-card p-10 rounded-[2rem] text-center">
-                    <div class="text-rose-400 text-3xl mb-6"><i class="fas fa-phone"></i></div>
-                    <p class="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2">Contact</p>
-                    <p class="font-bold text-lg">0917-585-2472</p>
-                </a>
-            </div>
-        </section>
+            </section>
 
+            <section class="sys-cta" data-reveal="zoom">
+                <div>
+                    <h2>Ready to deploy Pharmacy POS in your organization?</h2>
+                    <p>Book a walkthrough with our team. We'll show you the system live and talk through setup, data migration and training for your staff.</p>
+                </div>
+                <div class="sys-cta-row">
+                    <a href="mailto:buildbrightsoftwaresolution@gmail.com?subject=Demo%20Request%3A%20Pharmacy%20POS" class="sys-btn primary"><i class="fas fa-calendar-check"></i> Request a Demo</a>
+                    <a href="tel:09175852472" class="sys-btn ghost"><i class="fas fa-phone"></i> Call Us</a>
+                </div>
+            </section>
+
+            <section class="sys-contact" id="contact">
+                <div class="sys-label" data-reveal="up">Get In Touch</div>
+                <div class="sys-contact-grid">
+                    <div class="sys-contact-card" data-reveal="up" style="--d:0"><div class="ic"><i class="fas fa-building"></i></div><div><small>Company</small><strong>Build Bright Software Solution</strong></div></div>
+                    <a href="mailto:buildbrightsoftwaresolution@gmail.com" class="sys-contact-card" data-reveal="up" style="--d:1"><div class="ic"><i class="fas fa-envelope"></i></div><div><small>Email</small><strong>buildbrightsoftwaresolution@gmail.com</strong></div></a>
+                    <a href="tel:09175852472" class="sys-contact-card" data-reveal="up" style="--d:2"><div class="ic"><i class="fas fa-phone"></i></div><div><small>Phone</small><strong>0917-585-2472</strong></div></a>
+                </div>
+            </section>
+
+            <section class="sys-related">
+                <div class="sys-related-head" data-reveal="up">
+                    <h2>Explore more business systems</h2>
+                    <a href="index.html#projects">View all systems <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="sys-related-grid">
+                    <a href="school-management.html" class="sys-rel-card" data-reveal="up" style="--d:0"><div class="ic"><i class="fas fa-school"></i></div><h3>School Management</h3><p>Centralized student, faculty, and grading records for educational institutions.</p><span>Learn more <i class="fas fa-arrow-right"></i></span></a>
+                    <a href="tenant-billing.html" class="sys-rel-card" data-reveal="up" style="--d:1"><div class="ic"><i class="fas fa-file-invoice-dollar"></i></div><h3>Tenant Billing System</h3><p>Automated rental and utility billing for property owners and stall management.</p><span>Learn more <i class="fas fa-arrow-right"></i></span></a>
+                    <a href="e-mass.html" class="sys-rel-card" data-reveal="up" style="--d:2"><div class="ic"><i class="fas fa-hospital-user"></i></div><h3>E-MASS</h3><p>Electronic Medical Appointment Scheduling System for streamlined healthcare booking.</p><span>Learn more <i class="fas fa-arrow-right"></i></span></a>
+                </div>
+            </section>
+        </div>
     </main>
 
-    <footer class="py-12 bg-black/40 text-center border-t border-white/5">
-        <p class="text-[10px] font-black text-slate-500 uppercase tracking-[0.5em]">Pharmacy POS &amp; Inventory &bull; Build Bright 2026</p>
+    <footer class="sys-footer">
+        <div class="sys-wrap">
+            <div class="sys-foot-grid">
+                <div>
+                    <a href="index.html" class="sys-logo">Build<span>Bright</span></a>
+                    <p>Secure, scalable systems for local government units and modern businesses.</p>
+                    <div class="sys-social">
+                        <a href="https://www.facebook.com/profile.php?id=61585601410507" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="mailto:buildbrightsoftwaresolution@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="tel:09175852472" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Government</h4>
+                    <ul>
+                        <li><a href="document-tracker.html">GovTrack</a></li>
+                        <li><a href="peso-joblink.html">PESO JobLink</a></li>
+                        <li><a href="one-id.html">One ID</a></li>
+                        <li><a href="birts.html">BIRTS</a></li>
+                        <li><a href="geo-mapping.html">Geo Mapping</a></li>
+                        <li><a href="legislative-management.html">Legislative Management System</a></li>
+                        <li><a href="business-permit.html">Business Permit & Licensing System</a></li>
+                        <li><a href="cswd-beneficiaries.html">CSWD Beneficiaries Management</a></li>
+                        <li><a href="civil-registry.html">Civil Registry Online System</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Business &amp; Enterprise</h4>
+                    <ul>
+                        <li><a href="restaurant-pos.html">Restaurant POS</a></li>
+                        <li><a href="pharmacy-pos.html" class="current">Pharmacy POS & Inventory</a></li>
+                        <li><a href="school-management.html">School Management</a></li>
+                        <li><a href="tenant-billing.html">Tenant Billing System</a></li>
+                        <li><a href="e-mass.html">E-MASS</a></li>
+                        <li><a href="hms.html">HMS</a></li>
+                        <li><a href="crewlink.html">Crewlink Management</a></li>
+                        <li><a href="hoa.html">HOA Management</a></li>
+                        <li><a href="website-development.html">Web Development</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#projects">All Systems</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sys-foot-bottom">
+                <span>&copy; <span class="bb-year">2026</span> Build Bright Software Solution. All rights reserved.</span>
+                <span>Pharmacy POS</span>
+            </div>
+        </div>
     </footer>
 
+    <script src="animations.js"></script>
 </body>
 </html>

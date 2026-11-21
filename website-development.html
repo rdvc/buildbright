@@ -4,134 +4,235 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Website Development | Build Bright Software Solution</title>
+    <meta name="description" content="We don't just build websites — we build high-performing digital storefronts and robust web applications. From corporate landing pages to complex e-commerce platforms, we focus on speed, security, and high-conversion UI/UX design.">
+    <meta name="theme-color" content="#070b13">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0a0f19; color: #fff; }
-        .glow-text { text-shadow: 0 0 20px rgba(14, 165, 233, 0.5); }
-        .feature-card { background: rgba(26, 31, 43, 0.6); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.05); transition: all 0.3s ease; }
-        .feature-card:hover { border-color: #0ea5e9; transform: translateY(-5px); background: rgba(26, 31, 43, 0.9); }
-        .contact-card { background: rgba(26, 31, 43, 0.4); border: 1px solid rgba(255,255,255,0.03); transition: all 0.3s ease; }
-        .contact-card:hover { border-color: #0ea5e9; background: rgba(26, 31, 43, 0.8); }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="system.css">
 </head>
-<body class="overflow-x-hidden">
+<body class="sys overflow-x-hidden" style="--accent:#38bdf8;--accent-strong:#0284c7">
 
-    <nav class="flex justify-between items-center px-[5%] py-4 fixed w-full top-0 z-50 bg-[#0a0f19]/95 border-b border-white/5">
-        <div class="text-2xl font-black tracking-tighter">Build<span class="text-sky-400">Bright</span></div>
-        <a href="index.html" class="text-sm font-bold text-slate-400 hover:text-sky-400 transition">← Back to Portfolio</a>
+    <nav class="sys-nav">
+        <div class="sys-wrap">
+            <a href="index.html" class="sys-logo">Build<span>Bright</span></a>
+            <div class="sys-crumb"><a href="index.html#projects">Systems</a><i class="fas fa-chevron-right"></i><strong>Web Development</strong></div>
+            <div class="sys-nav-links">
+                <a href="index.html#projects" class="lnk">All Systems</a>
+                <a href="#contact" class="lnk">Contact</a>
+                <a href="mailto:buildbrightsoftwaresolution@gmail.com?subject=Demo%20Request%3A%20Web%20Development" class="sys-btn primary sm"><i class="fas fa-calendar-check"></i> Request Demo</a>
+            </div>
+        </div>
     </nav>
 
-    <header class="pt-32 pb-20 px-[5%] text-center relative">
-        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-sky-500/10 blur-[120px] rounded-full -z-10"></div>
-        <div class="inline-block px-4 py-1.5 mb-6 text-[10px] font-black tracking-[0.3em] text-sky-400 uppercase bg-sky-400/10 rounded-full border border-sky-400/20">UI/UX & Web Development</div>
-        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter mb-6">Web <span class="text-sky-400 glow-text">Development</span></h1>
-        <p class="max-w-2xl mx-auto text-slate-400 text-lg">We don't just build websites — we build high-performing digital storefronts and robust web applications. From corporate landing pages to complex e-commerce platforms, we focus on speed, security, and high-conversion UI/UX design.</p>
-
-        <div class="flex flex-wrap justify-center gap-3 mt-10">
-            <div class="flex items-center gap-2 px-4 py-2 bg-sky-500/10 border border-sky-500/20 rounded-full text-sm text-sky-300"><i class="fas fa-mobile-screen"></i> Mobile Responsive</div>
-            <div class="flex items-center gap-2 px-4 py-2 bg-sky-500/10 border border-sky-500/20 rounded-full text-sm text-sky-300"><i class="fas fa-rocket"></i> SEO Optimized</div>
-            <div class="flex items-center gap-2 px-4 py-2 bg-sky-500/10 border border-sky-500/20 rounded-full text-sm text-sky-300"><i class="fas fa-lock"></i> Secure Backend</div>
-            <div class="flex items-center gap-2 px-4 py-2 bg-sky-500/10 border border-sky-500/20 rounded-full text-sm text-sky-300"><i class="fas fa-gauge-high"></i> Performance Tuned</div>
+    <header class="sys-hero">
+        <div class="sys-wrap sys-hero-grid">
+            <div>
+                <div class="sys-eyebrow bb-intro" style="--i:0"><span class="dot"></span>UI/UX & Web Development</div>
+                <h1 class="bb-intro" style="--i:1">Web <span class="text-sky-400 glow-text">Development</span></h1>
+                <p class="sys-lead bb-intro" style="--i:2">We don't just build websites — we build high-performing digital storefronts and robust web applications. From corporate landing pages to complex e-commerce platforms, we focus on speed, security, and high-conversion UI/UX design.</p>
+                <div class="sys-cta-row bb-intro" style="--i:3">
+                    <a href="mailto:buildbrightsoftwaresolution@gmail.com?subject=Demo%20Request%3A%20Web%20Development" class="sys-btn primary"><i class="fas fa-play"></i> Request a Live Demo</a>
+                    <a href="#high-end-web-solutions" class="sys-btn ghost">Explore Features <i class="fas fa-arrow-down"></i></a>
+                </div>
+                <div class="sys-chips bb-intro" style="--i:4">
+                    <span class="sys-chip"><i class="fas fa-mobile-screen"></i> Mobile Responsive</span>
+                    <span class="sys-chip"><i class="fas fa-rocket"></i> SEO Optimized</span>
+                    <span class="sys-chip"><i class="fas fa-lock"></i> Secure Backend</span>
+                    <span class="sys-chip"><i class="fas fa-gauge-high"></i> Performance Tuned</span>
+                </div>
+            </div>
+            <div class="sys-preview bb-intro" style="--i:3" aria-hidden="true">
+                <div class="sys-preview-inner">
+                    <div class="pv-bar"><i></i><i></i><i></i><span><i class="fas fa-lock" style="color:#34d399;font-size:.6rem;margin-right:6px"></i>Web Development · Dashboard</span></div>
+                    <div class="pv-body">
+                        <div class="pv-side">
+                            <div class="on"><i class="fas fa-laptop-code"></i>High-End Web Solutions</div>
+                        </div>
+                        <div class="pv-main">
+                            <div class="pv-title">Web Development<small>Design, Development & Deployment</small></div>
+                            <div class="pv-tiles">
+                                <div class="pv-tile"><i class="fas fa-mobile-screen"></i><b></b><em>Mobile Responsive</em></div>
+                                <div class="pv-tile"><i class="fas fa-rocket"></i><b></b><em>SEO Optimized</em></div>
+                                <div class="pv-tile"><i class="fas fa-lock"></i><b></b><em>Secure Backend</em></div>
+                            </div>
+                            <div class="pv-chart"><span style="height:42%;animation-delay:0.6s"></span><span style="height:64%;animation-delay:0.6699999999999999s"></span><span style="height:50%;animation-delay:0.74s"></span><span style="height:78%;animation-delay:0.81s"></span><span style="height:58%;animation-delay:0.88s"></span><span style="height:88%;animation-delay:0.95s"></span><span style="height:70%;animation-delay:1.02s"></span><span style="height:95%;animation-delay:1.09s"></span></div>
+                            <div class="pv-rows"><div><b></b><s>Active</s></div><div><b style="flex:.7"></b><s>Synced</s></div><div><b style="flex:.85"></b><s>New</s></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
-    <main class="max-w-7xl mx-auto px-4 space-y-32 pb-20">
+    <div class="sys-tabs">
+        <div class="sys-wrap">
+            <a href="#high-end-web-solutions">High-End Web Solutions</a>
+            <a href="#stack">Technology</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
 
-        <section>
-            <div class="flex items-center gap-4 mb-12">
-                <div class="w-12 h-12 bg-sky-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-sky-600/20">
-                    <i class="fas fa-laptop-code text-xl"></i>
+    <main class="sys-main">
+        <div class="sys-wrap">
+
+            <section class="sys-section" id="high-end-web-solutions">
+                <div class="sys-sec-head" data-reveal="up">
+                    <div>
+                        <div class="num">01 / 01</div>
+                        <h2>High-End Web Solutions</h2>
+                        <p>Design, Development & Deployment</p>
+                    </div>
+                    <div class="sys-sec-icon"><i class="fas fa-laptop-code"></i></div>
                 </div>
-                <div>
-                    <h2 class="text-3xl font-black tracking-tight">High-End Web Solutions</h2>
-                    <p class="text-sky-400 text-xs font-bold uppercase tracking-widest">Design, Development & Deployment</p>
-                </div>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="feature-card p-8 rounded-[2.5rem]">
-                    <i class="fas fa-paint-brush text-3xl text-sky-400 mb-6"></i>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="feature-card" data-reveal="up" style="--d:0">
+                    <span class="fc-icon"><i class="fas fa-paint-brush"></i></span>
                     <h3 class="text-xl font-bold mb-3">Custom UI/UX Design</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">Unique designs tailored to your brand identity. No generic templates — every pixel placed with purpose for maximum visual impact and user engagement.</p>
                 </div>
-                <div class="feature-card p-8 rounded-[2.5rem]">
-                    <i class="fas fa-gauge-high text-3xl text-sky-400 mb-6"></i>
+                <div class="feature-card" data-reveal="up" style="--d:1">
+                    <span class="fc-icon"><i class="fas fa-gauge-high"></i></span>
                     <h3 class="text-xl font-bold mb-3">Performance Tuning</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">Lightning-fast load times through optimized code, asset minification, and image compression — critical for user retention and search engine rankings.</p>
                 </div>
-                <div class="feature-card p-8 rounded-[2.5rem]">
-                    <i class="fas fa-cart-shopping text-3xl text-sky-400 mb-6"></i>
+                <div class="feature-card" data-reveal="up" style="--d:2">
+                    <span class="fc-icon"><i class="fas fa-cart-shopping"></i></span>
                     <h3 class="text-xl font-bold mb-3">E-Commerce Ready</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">Secure product catalogs, shopping cart systems, and integrated payment gateways including GCash and Maya for the Philippine market.</p>
                 </div>
-                <div class="feature-card p-8 rounded-[2.5rem]">
-                    <i class="fas fa-magnifying-glass text-3xl text-sky-400 mb-6"></i>
+                <div class="feature-card" data-reveal="up" style="--d:0">
+                    <span class="fc-icon"><i class="fas fa-magnifying-glass"></i></span>
                     <h3 class="text-xl font-bold mb-3">Search Engine Optimization</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">Strategic SEO structure using semantic markup, Schema.org, XML Sitemaps, and proper Meta tagging to boost your Google visibility organically.</p>
                 </div>
-                <div class="feature-card p-8 rounded-[2.5rem]">
-                    <i class="fas fa-database text-3xl text-sky-400 mb-6"></i>
+                <div class="feature-card" data-reveal="up" style="--d:1">
+                    <span class="fc-icon"><i class="fas fa-database"></i></span>
                     <h3 class="text-xl font-bold mb-3">Dynamic CMS</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">Easy-to-use administrative dashboards that allow you to update website content, products, and blog posts without writing a single line of code.</p>
                 </div>
-                <div class="feature-card p-8 rounded-[2.5rem]">
-                    <i class="fas fa-shield-halved text-3xl text-sky-400 mb-6"></i>
+                <div class="feature-card" data-reveal="up" style="--d:2">
+                    <span class="fc-icon"><i class="fas fa-shield-halved"></i></span>
                     <h3 class="text-xl font-bold mb-3">Advanced Security</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">Built-in protection against SQL injection, XSS, and CSRF attacks. SSL integration and secure session management for safe user browsing.</p>
                 </div>
-                <div class="feature-card p-8 rounded-[2.5rem]">
-                    <i class="fas fa-arrows-spin text-3xl text-sky-400 mb-6"></i>
+                <div class="feature-card" data-reveal="up" style="--d:0">
+                    <span class="fc-icon"><i class="fas fa-arrows-spin"></i></span>
                     <h3 class="text-xl font-bold mb-3">API Integration</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">Connect your website to third-party services — social media platforms, SMS gateways, payment processors, or existing ERP systems via REST APIs.</p>
                 </div>
-                <div class="feature-card p-8 rounded-[2.5rem]">
-                    <i class="fas fa-headset text-3xl text-sky-400 mb-6"></i>
+                <div class="feature-card" data-reveal="up" style="--d:1">
+                    <span class="fc-icon"><i class="fas fa-headset"></i></span>
                     <h3 class="text-xl font-bold mb-3">Post-Launch Support</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">Continuous maintenance, security patches, and technical updates after deployment to keep your site running smoothly and securely long-term.</p>
                 </div>
             </div>
-        </section>
+            </section>
 
-        <section class="text-center pt-10">
-            <h2 class="text-sm font-black uppercase tracking-[0.5em] text-slate-500 mb-10">Technology Stack</h2>
-            <div class="flex flex-wrap justify-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all duration-700">
-                <div class="flex items-center gap-2"><i class="fab fa-laravel text-4xl"></i><span class="font-bold">Laravel 10+</span></div>
-                <div class="flex items-center gap-2"><i class="fas fa-database text-4xl"></i><span class="font-bold">MySQL</span></div>
-                <div class="flex items-center gap-2"><i class="fab fa-js text-4xl"></i><span class="font-bold">JavaScript</span></div>
-                <div class="flex items-center gap-2"><i class="fas fa-mobile text-4xl"></i><span class="font-bold">Mobile-First</span></div>
-            </div>
-        </section>
-
-        <section class="pt-20 border-t border-white/5">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-black tracking-tight mb-4 italic">Let's Build Something Great</h2>
-                <p class="text-slate-400 text-sm">Contact us for a quote or technical consultation for your custom website project.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="contact-card p-10 rounded-[2rem] text-center">
-                    <div class="text-sky-400 text-3xl mb-6"><i class="fas fa-building"></i></div>
-                    <p class="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2">Company</p>
-                    <p class="font-bold text-lg">Build Bright Software Solution</p>
+            <section class="sys-stack" id="stack">
+                <div class="sys-label" data-reveal="up">Built With</div>
+                <div class="sys-stack-row">
+                    <div class="sys-stack-item" data-reveal="zoom" style="--d:0"><i class="fab fa-laravel"></i>Laravel 10+</div>
+                    <div class="sys-stack-item" data-reveal="zoom" style="--d:1"><i class="fas fa-database"></i>MySQL</div>
+                    <div class="sys-stack-item" data-reveal="zoom" style="--d:2"><i class="fab fa-js"></i>JavaScript</div>
+                    <div class="sys-stack-item" data-reveal="zoom" style="--d:3"><i class="fas fa-mobile"></i>Mobile-First</div>
                 </div>
-                <a href="mailto:buildbrightsoftwaresolution@gmail.com" class="contact-card p-10 rounded-[2rem] text-center">
-                    <div class="text-sky-400 text-3xl mb-6"><i class="fas fa-envelope"></i></div>
-                    <p class="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2">Email</p>
-                    <p class="font-bold text-lg break-all">buildbrightsoftwaresolution@gmail.com</p>
-                </a>
-                <a href="tel:09175852472" class="contact-card p-10 rounded-[2rem] text-center">
-                    <div class="text-sky-400 text-3xl mb-6"><i class="fas fa-phone"></i></div>
-                    <p class="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2">Contact</p>
-                    <p class="font-bold text-lg">0917-585-2472</p>
-                </a>
-            </div>
-        </section>
+            </section>
 
+            <section class="sys-cta" data-reveal="zoom">
+                <div>
+                    <h2>Ready to deploy Web Development in your organization?</h2>
+                    <p>Book a walkthrough with our team. We'll show you the system live and talk through setup, data migration and training for your staff.</p>
+                </div>
+                <div class="sys-cta-row">
+                    <a href="mailto:buildbrightsoftwaresolution@gmail.com?subject=Demo%20Request%3A%20Web%20Development" class="sys-btn primary"><i class="fas fa-calendar-check"></i> Request a Demo</a>
+                    <a href="tel:09175852472" class="sys-btn ghost"><i class="fas fa-phone"></i> Call Us</a>
+                </div>
+            </section>
+
+            <section class="sys-contact" id="contact">
+                <div class="sys-label" data-reveal="up">Get In Touch</div>
+                <div class="sys-contact-grid">
+                    <div class="sys-contact-card" data-reveal="up" style="--d:0"><div class="ic"><i class="fas fa-building"></i></div><div><small>Company</small><strong>Build Bright Software Solution</strong></div></div>
+                    <a href="mailto:buildbrightsoftwaresolution@gmail.com" class="sys-contact-card" data-reveal="up" style="--d:1"><div class="ic"><i class="fas fa-envelope"></i></div><div><small>Email</small><strong>buildbrightsoftwaresolution@gmail.com</strong></div></a>
+                    <a href="tel:09175852472" class="sys-contact-card" data-reveal="up" style="--d:2"><div class="ic"><i class="fas fa-phone"></i></div><div><small>Phone</small><strong>0917-585-2472</strong></div></a>
+                </div>
+            </section>
+
+            <section class="sys-related">
+                <div class="sys-related-head" data-reveal="up">
+                    <h2>Explore more business systems</h2>
+                    <a href="index.html#projects">View all systems <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="sys-related-grid">
+                    <a href="restaurant-pos.html" class="sys-rel-card" data-reveal="up" style="--d:0"><div class="ic"><i class="fas fa-utensils"></i></div><h3>Restaurant POS</h3><p>Complete dine-in and take-out management system for the food industry.</p><span>Learn more <i class="fas fa-arrow-right"></i></span></a>
+                    <a href="pharmacy-pos.html" class="sys-rel-card" data-reveal="up" style="--d:1"><div class="ic"><i class="fas fa-capsules"></i></div><h3>Pharmacy POS & Inventory</h3><p>Specialized tracking for medical retail with expiry and batch notifications.</p><span>Learn more <i class="fas fa-arrow-right"></i></span></a>
+                    <a href="school-management.html" class="sys-rel-card" data-reveal="up" style="--d:2"><div class="ic"><i class="fas fa-school"></i></div><h3>School Management</h3><p>Centralized student, faculty, and grading records for educational institutions.</p><span>Learn more <i class="fas fa-arrow-right"></i></span></a>
+                </div>
+            </section>
+        </div>
     </main>
 
-    <footer class="py-12 bg-black/40 text-center border-t border-white/5">
-        <p class="text-[10px] font-black text-slate-500 uppercase tracking-[0.5em]">Web Development &bull; Build Bright 2026</p>
+    <footer class="sys-footer">
+        <div class="sys-wrap">
+            <div class="sys-foot-grid">
+                <div>
+                    <a href="index.html" class="sys-logo">Build<span>Bright</span></a>
+                    <p>Secure, scalable systems for local government units and modern businesses.</p>
+                    <div class="sys-social">
+                        <a href="https://www.facebook.com/profile.php?id=61585601410507" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="mailto:buildbrightsoftwaresolution@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="tel:09175852472" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Government</h4>
+                    <ul>
+                        <li><a href="document-tracker.html">GovTrack</a></li>
+                        <li><a href="peso-joblink.html">PESO JobLink</a></li>
+                        <li><a href="one-id.html">One ID</a></li>
+                        <li><a href="birts.html">BIRTS</a></li>
+                        <li><a href="geo-mapping.html">Geo Mapping</a></li>
+                        <li><a href="legislative-management.html">Legislative Management System</a></li>
+                        <li><a href="business-permit.html">Business Permit & Licensing System</a></li>
+                        <li><a href="cswd-beneficiaries.html">CSWD Beneficiaries Management</a></li>
+                        <li><a href="civil-registry.html">Civil Registry Online System</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Business &amp; Enterprise</h4>
+                    <ul>
+                        <li><a href="restaurant-pos.html">Restaurant POS</a></li>
+                        <li><a href="pharmacy-pos.html">Pharmacy POS & Inventory</a></li>
+                        <li><a href="school-management.html">School Management</a></li>
+                        <li><a href="tenant-billing.html">Tenant Billing System</a></li>
+                        <li><a href="e-mass.html">E-MASS</a></li>
+                        <li><a href="hms.html">HMS</a></li>
+                        <li><a href="crewlink.html">Crewlink Management</a></li>
+                        <li><a href="hoa.html">HOA Management</a></li>
+                        <li><a href="website-development.html" class="current">Web Development</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#projects">All Systems</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sys-foot-bottom">
+                <span>&copy; <span class="bb-year">2026</span> Build Bright Software Solution. All rights reserved.</span>
+                <span>Web Development</span>
+            </div>
+        </div>
     </footer>
 
+    <script src="animations.js"></script>
 </body>
 </html>

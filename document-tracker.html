@@ -4,163 +4,265 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GovTrack | Build Bright Software Solution</title>
+    <meta name="description" content="A high-security document monitoring system designed for government transparency. Featuring real-time tracking, QR-based routing, and detailed office audit logs.">
+    <meta name="theme-color" content="#070b13">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap');
-        body { font-family: 'Plus Jakarta Sans', sans-serif; background-color: #0a0f19; color: #fff; }
-        .glow-text { text-shadow: 0 0 20px rgba(239, 68, 68, 0.5); }
-        .feature-card { background: rgba(26, 31, 43, 0.6); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.05); transition: all 0.3s ease; }
-        .feature-card:hover { border-color: #ef4444; transform: translateY(-5px); background: rgba(26, 31, 43, 0.9); }
-        .contact-card { background: rgba(26, 31, 43, 0.4); border: 1px solid rgba(255,255,255,0.03); transition: all 0.3s ease; }
-        .contact-card:hover { border-color: #ef4444; background: rgba(26, 31, 43, 0.8); }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="system.css">
 </head>
-<body class="overflow-x-hidden">
+<body class="sys overflow-x-hidden" style="--accent:#f87171;--accent-strong:#dc2626">
 
-    <nav class="flex justify-between items-center px-[5%] py-4 fixed w-full top-0 z-50 bg-[#0a0f19]/95 border-b border-white/5">
-        <div class="text-2xl font-black tracking-tighter">Build<span class="text-red-400">Bright</span></div>
-        <a href="index.html" class="text-sm font-bold text-slate-400 hover:text-red-400 transition">← Back to Portfolio</a>
+    <nav class="sys-nav">
+        <div class="sys-wrap">
+            <a href="index.html" class="sys-logo">Build<span>Bright</span></a>
+            <div class="sys-crumb"><a href="index.html#projects">Systems</a><i class="fas fa-chevron-right"></i><strong>GovTrack</strong></div>
+            <div class="sys-nav-links">
+                <a href="index.html#projects" class="lnk">All Systems</a>
+                <a href="#contact" class="lnk">Contact</a>
+                <a href="mailto:buildbrightsoftwaresolution@gmail.com?subject=Demo%20Request%3A%20GovTrack" class="sys-btn primary sm"><i class="fas fa-calendar-check"></i> Request Demo</a>
+            </div>
+        </div>
     </nav>
 
-    <header class="pt-32 pb-20 px-[5%] text-center relative">
-        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-[500px] bg-red-500/10 blur-[120px] rounded-full -z-10"></div>
-        <div class="inline-block px-4 py-1.5 mb-6 text-[10px] font-black tracking-[0.3em] text-red-400 uppercase bg-red-400/10 rounded-full border border-red-400/20">LGU Document Logistics</div>
-        <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter mb-6">Gov<span class="text-red-400 glow-text">Track</span></h1>
-        <p class="max-w-2xl mx-auto text-slate-400 text-lg">A high-security document monitoring system designed for government transparency. Featuring real-time tracking, QR-based routing, and detailed office audit logs.</p>
-
-        <div class="flex flex-wrap justify-center gap-3 mt-10">
-            <div class="flex items-center gap-2 px-4 py-2 bg-red-500/10 border border-red-500/20 rounded-full text-sm text-red-300"><i class="fas fa-qrcode"></i> QR Scanner</div>
-            <div class="flex items-center gap-2 px-4 py-2 bg-red-500/10 border border-red-500/20 rounded-full text-sm text-red-300"><i class="fas fa-route"></i> Live Timeline</div>
-            <div class="flex items-center gap-2 px-4 py-2 bg-red-500/10 border border-red-500/20 rounded-full text-sm text-red-300"><i class="fas fa-file-contract"></i> Archive Management</div>
-            <div class="flex items-center gap-2 px-4 py-2 bg-red-500/10 border border-red-500/20 rounded-full text-sm text-red-300"><i class="fas fa-shield-halved"></i> Audit Trail</div>
+    <header class="sys-hero">
+        <div class="sys-wrap sys-hero-grid">
+            <div>
+                <div class="sys-eyebrow bb-intro" style="--i:0"><span class="dot"></span>LGU Document Logistics</div>
+                <h1 class="bb-intro" style="--i:1">Gov<span class="text-red-400 glow-text">Track</span></h1>
+                <p class="sys-lead bb-intro" style="--i:2">A high-security document monitoring system designed for government transparency. Featuring real-time tracking, QR-based routing, and detailed office audit logs.</p>
+                <div class="sys-cta-row bb-intro" style="--i:3">
+                    <a href="mailto:buildbrightsoftwaresolution@gmail.com?subject=Demo%20Request%3A%20GovTrack" class="sys-btn primary"><i class="fas fa-play"></i> Request a Live Demo</a>
+                    <a href="#intelligent-document-tracking" class="sys-btn ghost">Explore Features <i class="fas fa-arrow-down"></i></a>
+                </div>
+                <div class="sys-chips bb-intro" style="--i:4">
+                    <span class="sys-chip"><i class="fas fa-qrcode"></i> QR Scanner</span>
+                    <span class="sys-chip"><i class="fas fa-route"></i> Live Timeline</span>
+                    <span class="sys-chip"><i class="fas fa-file-contract"></i> Archive Management</span>
+                    <span class="sys-chip"><i class="fas fa-shield-halved"></i> Audit Trail</span>
+                </div>
+            </div>
+            <div class="sys-preview bb-intro" style="--i:3" aria-hidden="true">
+                <div class="sys-preview-inner">
+                    <div class="pv-bar"><i></i><i></i><i></i><span><i class="fas fa-lock" style="color:#34d399;font-size:.6rem;margin-right:6px"></i>GovTrack · Dashboard</span></div>
+                    <div class="pv-body">
+                        <div class="pv-side">
+                            <div class="on"><i class="fas fa-folder-tree"></i>Intelligent Document Tracking</div>
+                            <div><i class="fas fa-archive"></i>Archive & Document Management</div>
+                        </div>
+                        <div class="pv-main">
+                            <div class="pv-title">GovTrack<small>Real-Time Monitoring & QR Routing</small></div>
+                            <div class="pv-tiles">
+                                <div class="pv-tile"><i class="fas fa-qrcode"></i><b></b><em>QR Scanner</em></div>
+                                <div class="pv-tile"><i class="fas fa-route"></i><b></b><em>Live Timeline</em></div>
+                                <div class="pv-tile"><i class="fas fa-file-contract"></i><b></b><em>Archive Management</em></div>
+                            </div>
+                            <div class="pv-chart"><span style="height:42%;animation-delay:0.6s"></span><span style="height:64%;animation-delay:0.6699999999999999s"></span><span style="height:50%;animation-delay:0.74s"></span><span style="height:78%;animation-delay:0.81s"></span><span style="height:58%;animation-delay:0.88s"></span><span style="height:88%;animation-delay:0.95s"></span><span style="height:70%;animation-delay:1.02s"></span><span style="height:95%;animation-delay:1.09s"></span></div>
+                            <div class="pv-rows"><div><b></b><s>Active</s></div><div><b style="flex:.7"></b><s>Synced</s></div><div><b style="flex:.85"></b><s>New</s></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
 
-    <main class="max-w-7xl mx-auto px-4 space-y-32 pb-20">
+    <div class="sys-tabs">
+        <div class="sys-wrap">
+            <a href="#intelligent-document-tracking">Intelligent Document Tracking</a>
+            <a href="#archive-document-management">Archive & Document Management</a>
+            <a href="#stack">Technology</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
 
-        <section>
-            <div class="flex items-center gap-4 mb-12">
-                <div class="w-12 h-12 bg-red-600 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-red-600/20">
-                    <i class="fas fa-folder-tree text-xl"></i>
+    <main class="sys-main">
+        <div class="sys-wrap">
+
+            <section class="sys-section" id="intelligent-document-tracking">
+                <div class="sys-sec-head" data-reveal="up">
+                    <div>
+                        <div class="num">01 / 02</div>
+                        <h2>Intelligent Document Tracking</h2>
+                        <p>Real-Time Monitoring & QR Routing</p>
+                    </div>
+                    <div class="sys-sec-icon"><i class="fas fa-folder-tree"></i></div>
                 </div>
-                <div>
-                    <h2 class="text-3xl font-black tracking-tight">Intelligent Document Tracking</h2>
-                    <p class="text-red-400 text-xs font-bold uppercase tracking-widest">Real-Time Monitoring & QR Routing</p>
-                </div>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="feature-card p-8 rounded-[2.5rem]">
-                    <i class="fas fa-qrcode text-3xl text-red-400 mb-6"></i>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="feature-card" data-reveal="up" style="--d:0">
+                    <span class="fc-icon"><i class="fas fa-qrcode"></i></span>
                     <h3 class="text-xl font-bold mb-3">Integrated QR Logic</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">Uses high-speed scanner API to process arrivals and departures with a single beep. Compatible with MP7200 hardware for seamless office integration.</p>
                 </div>
-                <div class="feature-card p-8 rounded-[2.5rem]">
-                    <i class="fas fa-timeline text-3xl text-red-400 mb-6"></i>
+                <div class="feature-card" data-reveal="up" style="--d:1">
+                    <span class="fc-icon"><i class="fas fa-timeline"></i></span>
                     <h3 class="text-xl font-bold mb-3">Movement Timeline</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">Visual Shopee-style representation of a document's journey from Origin to Final Release, showing timestamps and handlers at every station.</p>
                 </div>
-                <div class="feature-card p-8 rounded-[2.5rem]">
-                    <i class="fas fa-building-circle-check text-3xl text-red-400 mb-6"></i>
+                <div class="feature-card" data-reveal="up" style="--d:2">
+                    <span class="fc-icon"><i class="fas fa-building-circle-check"></i></span>
                     <h3 class="text-xl font-bold mb-3">Office Accountability</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">Automatically identifies the logger's office upon login to ensure accurate receiving records and full chain-of-custody documentation.</p>
                 </div>
-                <div class="feature-card p-8 rounded-[2.5rem]">
-                    <i class="fas fa-file-export text-3xl text-red-400 mb-6"></i>
+                <div class="feature-card" data-reveal="up" style="--d:0">
+                    <span class="fc-icon"><i class="fas fa-file-export"></i></span>
                     <h3 class="text-xl font-bold mb-3">Automated Reports</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">Generate daily or monthly movement reports with printable audit trails for transparency compliance and internal accountability reviews.</p>
                 </div>
-                <div class="feature-card p-8 rounded-[2.5rem]">
-                    <i class="fas fa-user-shield text-3xl text-red-400 mb-6"></i>
+                <div class="feature-card" data-reveal="up" style="--d:1">
+                    <span class="fc-icon"><i class="fas fa-user-shield"></i></span>
                     <h3 class="text-xl font-bold mb-3">Role-Based Access</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">Secure authentication for Administrators, Dept. Heads, and Office Staff with specific permission tiers to control data access.</p>
                 </div>
-                <div class="feature-card p-8 rounded-[2.5rem]">
-                    <i class="fas fa-clock-rotate-left text-3xl text-red-400 mb-6"></i>
+                <div class="feature-card" data-reveal="up" style="--d:2">
+                    <span class="fc-icon"><i class="fas fa-clock-rotate-left"></i></span>
                     <h3 class="text-xl font-bold mb-3">Live Dashboard Updates</h3>
                     <p class="text-slate-400 text-sm leading-relaxed">Dashboard updates in real-time as documents are scanned across different building terminals, providing instant office-wide visibility.</p>
                 </div>
             </div>
-        </section>
+            </section>
 
-        <section>
-            <div class="flex items-center gap-4 mb-12">
-                <div class="w-12 h-12 bg-rose-700 rounded-2xl flex items-center justify-center text-white shadow-lg shadow-rose-700/20">
-                    <i class="fas fa-archive text-xl"></i>
+            <section class="sys-section" id="archive-document-management">
+                <div class="sys-sec-head" data-reveal="up">
+                    <div>
+                        <div class="num">02 / 02</div>
+                        <h2>Archive & Document Management</h2>
+                        <p>Filing, Retrieval & Classification</p>
+                    </div>
+                    <div class="sys-sec-icon"><i class="fas fa-archive"></i></div>
                 </div>
-                <div>
-                    <h2 class="text-3xl font-black tracking-tight">Archive & Document Management</h2>
-                    <p class="text-rose-400 text-xs font-bold uppercase tracking-widest">Filing, Retrieval & Classification</p>
-                </div>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="feature-card p-8 rounded-[2.5rem]">
-                    <i class="fas fa-tags text-3xl text-rose-400 mb-6"></i>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="feature-card" data-reveal="up" style="--d:0">
+                    <span class="fc-icon"><i class="fas fa-tags"></i></span>
                     <h3 class="text-xl font-bold mb-3">Document Classification</h3>
                     <p class="text-slate-400 text-sm">Categorize incoming documents by type, originating office, urgency, and routing destination for organized processing.</p>
                 </div>
-                <div class="feature-card p-8 rounded-[2.5rem]">
-                    <i class="fas fa-search text-3xl text-rose-400 mb-6"></i>
+                <div class="feature-card" data-reveal="up" style="--d:1">
+                    <span class="fc-icon"><i class="fas fa-search"></i></span>
                     <h3 class="text-xl font-bold mb-3">Instant Retrieval</h3>
                     <p class="text-slate-400 text-sm">Search any document by tracking number, title, originating office, or date. Complex indexing for sub-second retrieval from archive.</p>
                 </div>
-                <div class="feature-card p-8 rounded-[2.5rem]">
-                    <i class="fas fa-hourglass-half text-3xl text-rose-400 mb-6"></i>
+                <div class="feature-card" data-reveal="up" style="--d:2">
+                    <span class="fc-icon"><i class="fas fa-hourglass-half"></i></span>
                     <h3 class="text-xl font-bold mb-3">SLA & TAT Monitoring</h3>
                     <p class="text-slate-400 text-sm">Track turnaround time per document and office. Flag documents exceeding SLA thresholds for administrative intervention.</p>
                 </div>
-                <div class="feature-card p-8 rounded-[2.5rem]">
-                    <i class="fas fa-paper-plane text-3xl text-rose-400 mb-6"></i>
+                <div class="feature-card" data-reveal="up" style="--d:0">
+                    <span class="fc-icon"><i class="fas fa-paper-plane"></i></span>
                     <h3 class="text-xl font-bold mb-3">Digital Routing Slips</h3>
                     <p class="text-slate-400 text-sm">Replace paper routing slips with digital forwarding. Each transfer is logged with receiver name, time, and digital acknowledgment.</p>
                 </div>
-                <div class="feature-card p-8 rounded-[2.5rem]">
-                    <i class="fas fa-check-double text-3xl text-rose-400 mb-6"></i>
+                <div class="feature-card" data-reveal="up" style="--d:1">
+                    <span class="fc-icon"><i class="fas fa-check-double"></i></span>
                     <h3 class="text-xl font-bold mb-3">Release Confirmation</h3>
                     <p class="text-slate-400 text-sm">Require digital acknowledgment from receiving parties before marking a document as released or closed in the system.</p>
                 </div>
             </div>
-        </section>
+            </section>
 
-        <section class="text-center pt-10">
-            <h2 class="text-sm font-black uppercase tracking-[0.5em] text-slate-500 mb-10">Infrastructure Stack</h2>
-            <div class="flex flex-wrap justify-center gap-12 opacity-50 grayscale hover:grayscale-0 transition-all duration-700">
-                <div class="flex items-center gap-2"><i class="fab fa-php text-4xl"></i><span class="font-bold">PHP 8.x</span></div>
-                <div class="flex items-center gap-2"><i class="fas fa-database text-4xl"></i><span class="font-bold">MySQL</span></div>
-                <div class="flex items-center gap-2"><i class="fas fa-expand text-4xl"></i><span class="font-bold">Tailwind CSS</span></div>
-                <div class="flex items-center gap-2"><i class="fas fa-code text-4xl"></i><span class="font-bold">HTML5-QRCode</span></div>
-            </div>
-        </section>
-
-        <section class="pt-20 border-t border-white/5">
-            <div class="text-center mb-16">
-                <h2 class="text-4xl font-black tracking-tight mb-4 italic">Let's Build Something Great</h2>
-                <p class="text-slate-400 text-sm">Contact us directly for a technical consultation or a live system demo.</p>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="contact-card p-10 rounded-[2rem] text-center">
-                    <div class="text-red-400 text-3xl mb-6"><i class="fas fa-building"></i></div>
-                    <p class="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2">Company</p>
-                    <p class="font-bold text-lg">Build Bright Software Solution</p>
+            <section class="sys-stack" id="stack">
+                <div class="sys-label" data-reveal="up">Built With</div>
+                <div class="sys-stack-row">
+                    <div class="sys-stack-item" data-reveal="zoom" style="--d:0"><i class="fab fa-php"></i>PHP 8.x</div>
+                    <div class="sys-stack-item" data-reveal="zoom" style="--d:1"><i class="fas fa-database"></i>MySQL</div>
+                    <div class="sys-stack-item" data-reveal="zoom" style="--d:2"><i class="fas fa-expand"></i>Tailwind CSS</div>
+                    <div class="sys-stack-item" data-reveal="zoom" style="--d:3"><i class="fas fa-code"></i>HTML5-QRCode</div>
                 </div>
-                <a href="mailto:buildbrightsoftwaresolution@gmail.com" class="contact-card p-10 rounded-[2rem] text-center">
-                    <div class="text-red-400 text-3xl mb-6"><i class="fas fa-envelope"></i></div>
-                    <p class="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2">Email</p>
-                    <p class="font-bold text-lg break-all">buildbrightsoftwaresolution@gmail.com</p>
-                </a>
-                <a href="tel:09175852472" class="contact-card p-10 rounded-[2rem] text-center">
-                    <div class="text-red-400 text-3xl mb-6"><i class="fas fa-phone"></i></div>
-                    <p class="text-[10px] font-black text-slate-500 uppercase tracking-widest mb-2">Contact</p>
-                    <p class="font-bold text-lg">0917-585-2472</p>
-                </a>
-            </div>
-        </section>
+            </section>
 
+            <section class="sys-cta" data-reveal="zoom">
+                <div>
+                    <h2>Ready to deploy GovTrack in your organization?</h2>
+                    <p>Book a walkthrough with our team. We'll show you the system live and talk through setup, data migration and training for your staff.</p>
+                </div>
+                <div class="sys-cta-row">
+                    <a href="mailto:buildbrightsoftwaresolution@gmail.com?subject=Demo%20Request%3A%20GovTrack" class="sys-btn primary"><i class="fas fa-calendar-check"></i> Request a Demo</a>
+                    <a href="tel:09175852472" class="sys-btn ghost"><i class="fas fa-phone"></i> Call Us</a>
+                </div>
+            </section>
+
+            <section class="sys-contact" id="contact">
+                <div class="sys-label" data-reveal="up">Get In Touch</div>
+                <div class="sys-contact-grid">
+                    <div class="sys-contact-card" data-reveal="up" style="--d:0"><div class="ic"><i class="fas fa-building"></i></div><div><small>Company</small><strong>Build Bright Software Solution</strong></div></div>
+                    <a href="mailto:buildbrightsoftwaresolution@gmail.com" class="sys-contact-card" data-reveal="up" style="--d:1"><div class="ic"><i class="fas fa-envelope"></i></div><div><small>Email</small><strong>buildbrightsoftwaresolution@gmail.com</strong></div></a>
+                    <a href="tel:09175852472" class="sys-contact-card" data-reveal="up" style="--d:2"><div class="ic"><i class="fas fa-phone"></i></div><div><small>Phone</small><strong>0917-585-2472</strong></div></a>
+                </div>
+            </section>
+
+            <section class="sys-related">
+                <div class="sys-related-head" data-reveal="up">
+                    <h2>Explore more government systems</h2>
+                    <a href="index.html#projects">View all systems <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="sys-related-grid">
+                    <a href="peso-joblink.html" class="sys-rel-card" data-reveal="up" style="--d:0"><div class="ic"><i class="fas fa-briefcase"></i></div><h3>PESO JobLink</h3><p>Employment portal for LGUs featuring automated job matching and employer accreditation.</p><span>Learn more <i class="fas fa-arrow-right"></i></span></a>
+                    <a href="one-id.html" class="sys-rel-card" data-reveal="up" style="--d:1"><div class="ic"><i class="fas fa-id-card"></i></div><h3>One ID</h3><p>A centralized city-wide identification system with real-time verification capabilities.</p><span>Learn more <i class="fas fa-arrow-right"></i></span></a>
+                    <a href="birts.html" class="sys-rel-card" data-reveal="up" style="--d:2"><div class="ic"><i class="fas fa-users-cog"></i></div><h3>BIRTS</h3><p>Barangay Inhabitant Registration and Transaction System for efficient local governance.</p><span>Learn more <i class="fas fa-arrow-right"></i></span></a>
+                </div>
+            </section>
+        </div>
     </main>
 
-    <footer class="py-12 bg-black/40 text-center border-t border-white/5">
-        <p class="text-[10px] font-black text-slate-500 uppercase tracking-[0.5em]">GovTrack &bull; Build Bright 2026</p>
+    <footer class="sys-footer">
+        <div class="sys-wrap">
+            <div class="sys-foot-grid">
+                <div>
+                    <a href="index.html" class="sys-logo">Build<span>Bright</span></a>
+                    <p>Secure, scalable systems for local government units and modern businesses.</p>
+                    <div class="sys-social">
+                        <a href="https://www.facebook.com/profile.php?id=61585601410507" target="_blank" rel="noopener" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="mailto:buildbrightsoftwaresolution@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                        <a href="tel:09175852472" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                    </div>
+                </div>
+                <div>
+                    <h4>Government</h4>
+                    <ul>
+                        <li><a href="document-tracker.html" class="current">GovTrack</a></li>
+                        <li><a href="peso-joblink.html">PESO JobLink</a></li>
+                        <li><a href="one-id.html">One ID</a></li>
+                        <li><a href="birts.html">BIRTS</a></li>
+                        <li><a href="geo-mapping.html">Geo Mapping</a></li>
+                        <li><a href="legislative-management.html">Legislative Management System</a></li>
+                        <li><a href="business-permit.html">Business Permit & Licensing System</a></li>
+                        <li><a href="cswd-beneficiaries.html">CSWD Beneficiaries Management</a></li>
+                        <li><a href="civil-registry.html">Civil Registry Online System</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Business &amp; Enterprise</h4>
+                    <ul>
+                        <li><a href="restaurant-pos.html">Restaurant POS</a></li>
+                        <li><a href="pharmacy-pos.html">Pharmacy POS & Inventory</a></li>
+                        <li><a href="school-management.html">School Management</a></li>
+                        <li><a href="tenant-billing.html">Tenant Billing System</a></li>
+                        <li><a href="e-mass.html">E-MASS</a></li>
+                        <li><a href="hms.html">HMS</a></li>
+                        <li><a href="crewlink.html">Crewlink Management</a></li>
+                        <li><a href="hoa.html">HOA Management</a></li>
+                        <li><a href="website-development.html">Web Development</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="index.html#projects">All Systems</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="sys-foot-bottom">
+                <span>&copy; <span class="bb-year">2026</span> Build Bright Software Solution. All rights reserved.</span>
+                <span>GovTrack</span>
+            </div>
+        </div>
     </footer>
 
+    <script src="animations.js"></script>
 </body>
 </html>
