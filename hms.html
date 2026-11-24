@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HMS | Build Bright Software Solution</title>
-    <meta name="description" content="An end-to-end Hospital Management System for city health offices, hospitals and clinics — covering the full patient journey from registration and triage to consultation, laboratory, pharmacy, admission and billing.">
+    <meta name="description" content="A health information system for diagnostic clinics, hospitals and city health offices. It covers pre-employment medical exams (PEME) from start to finish: thumbprint registration, laboratory, physical and neuro exam, fitness classification and a printed medical certificate, plus pharmacy, billing and reports.">
     <meta name="theme-color" content="#070b13">
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -33,16 +33,16 @@
             <div>
                 <div class="sys-eyebrow bb-intro" style="--i:0"><span class="dot"></span>Health Information System</div>
                 <h1 class="bb-intro" style="--i:1">Hospital <span class="text-teal-400 glow-text">Management</span></h1>
-                <p class="sys-lead bb-intro" style="--i:2">An end-to-end Hospital Management System for city health offices, hospitals and clinics — covering the full patient journey from registration and triage to consultation, laboratory, pharmacy, admission and billing.</p>
+                <p class="sys-lead bb-intro" style="--i:2">A health information system for diagnostic clinics, hospitals and city health offices. It covers pre-employment medical exams (PEME) from start to finish: thumbprint registration, laboratory, physical and neuro exam, fitness classification and a printed medical certificate, plus pharmacy, billing and reports.</p>
                 <div class="sys-cta-row bb-intro" style="--i:3">
                     <a href="mailto:buildbrightsoftwaresolution@gmail.com?subject=Demo%20Request%3A%20Hospital%20Management" class="sys-btn primary"><i class="fas fa-play"></i> Request a Live Demo</a>
-                    <a href="#clinical-operations-patient-flow" class="sys-btn ghost">Explore Features <i class="fas fa-arrow-down"></i></a>
+                    <a href="#registration-biometrics" class="sys-btn ghost">Explore Features <i class="fas fa-arrow-down"></i></a>
                 </div>
                 <div class="sys-chips bb-intro" style="--i:4">
-                    <span class="sys-chip"><i class="fas fa-notes-medical"></i> Electronic Medical Records</span>
+                    <span class="sys-chip"><i class="fas fa-fingerprint"></i> Biometric Registration</span>
                     <span class="sys-chip"><i class="fas fa-flask"></i> Laboratory</span>
-                    <span class="sys-chip"><i class="fas fa-pills"></i> Pharmacy & Inventory</span>
-                    <span class="sys-chip"><i class="fas fa-bed"></i> Admissions</span>
+                    <span class="sys-chip"><i class="fas fa-stethoscope"></i> Medical Exam</span>
+                    <span class="sys-chip"><i class="fas fa-file-medical"></i> Medical Certificates</span>
                 </div>
             </div>
             <div class="sys-preview bb-intro" style="--i:3" aria-hidden="true">
@@ -50,16 +50,19 @@
                     <div class="pv-bar"><i></i><i></i><i></i><span><i class="fas fa-lock" style="color:#34d399;font-size:.6rem;margin-right:6px"></i>Hospital Management · Dashboard</span></div>
                     <div class="pv-body">
                         <div class="pv-side">
-                            <div class="on"><i class="fas fa-hospital"></i>Clinical Operations & Patient Flow</div>
+                            <div class="on"><i class="fas fa-fingerprint"></i>Registration & Biometrics</div>
+                            <div><i class="fas fa-microscope"></i>Laboratory & Medical Exam</div>
+                            <div><i class="fas fa-file-medical"></i>Certification, Pharmacy & Billing</div>
+                            <div><i class="fas fa-user-shield"></i>Security & Administration</div>
                         </div>
                         <div class="pv-main">
-                            <div class="pv-title">Hospital Management<small>Digitalizing Healthcare Delivery</small></div>
+                            <div class="pv-title">Hospital Management<small>Patient Identity You Can Trust</small></div>
                             <div class="pv-tiles">
-                                <div class="pv-tile"><i class="fas fa-notes-medical"></i><b></b><em>Electronic Medical Records</em></div>
+                                <div class="pv-tile"><i class="fas fa-fingerprint"></i><b></b><em>Biometric Registration</em></div>
                                 <div class="pv-tile"><i class="fas fa-flask"></i><b></b><em>Laboratory</em></div>
-                                <div class="pv-tile"><i class="fas fa-pills"></i><b></b><em>Pharmacy & Inventory</em></div>
+                                <div class="pv-tile"><i class="fas fa-stethoscope"></i><b></b><em>Medical Exam</em></div>
                             </div>
-                            <div class="pv-chart"><span style="height:42%;animation-delay:0.6s"></span><span style="height:64%;animation-delay:0.6699999999999999s"></span><span style="height:50%;animation-delay:0.74s"></span><span style="height:78%;animation-delay:0.81s"></span><span style="height:58%;animation-delay:0.88s"></span><span style="height:88%;animation-delay:0.95s"></span><span style="height:70%;animation-delay:1.02s"></span><span style="height:95%;animation-delay:1.09s"></span></div>
+                            <div class="pv-chart"><span style="height:42%;animation-delay:0.60s"></span><span style="height:64%;animation-delay:0.67s"></span><span style="height:50%;animation-delay:0.74s"></span><span style="height:78%;animation-delay:0.81s"></span><span style="height:58%;animation-delay:0.88s"></span><span style="height:88%;animation-delay:0.95s"></span><span style="height:70%;animation-delay:1.02s"></span><span style="height:95%;animation-delay:1.09s"></span></div>
                             <div class="pv-rows"><div><b></b><s>Active</s></div><div><b style="flex:.7"></b><s>Synced</s></div><div><b style="flex:.85"></b><s>New</s></div></div>
                         </div>
                     </div>
@@ -70,7 +73,10 @@
 
     <div class="sys-tabs">
         <div class="sys-wrap">
-            <a href="#clinical-operations-patient-flow">Clinical Operations & Patient Flow</a>
+            <a href="#registration-biometrics">Registration & Biometrics</a>
+            <a href="#laboratory-medical-exam">Laboratory & Medical Exam</a>
+            <a href="#certification-pharmacy-billing">Certification, Pharmacy & Billing</a>
+            <a href="#security-administration">Security & Administration</a>
             <a href="#stack">Technology</a>
             <a href="#contact">Contact</a>
         </div>
@@ -79,60 +85,171 @@
     <main class="sys-main">
         <div class="sys-wrap">
 
-            <section class="sys-section" id="clinical-operations-patient-flow">
+            <section class="sys-section" id="registration-biometrics">
                 <div class="sys-sec-head" data-reveal="up">
                     <div>
-                        <div class="num">01 / 01</div>
-                        <h2>Clinical Operations & Patient Flow</h2>
-                        <p>Digitalizing Healthcare Delivery</p>
+                        <div class="num">01 / 04</div>
+                        <h2>Registration & Biometrics</h2>
+                        <p>Patient Identity You Can Trust</p>
                     </div>
-                    <div class="sys-sec-icon"><i class="fas fa-hospital"></i></div>
+                    <div class="sys-sec-icon"><i class="fas fa-fingerprint"></i></div>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="feature-card" data-reveal="up" style="--d:0">
                     <span class="fc-icon"><i class="fas fa-id-card"></i></span>
                     <h3 class="text-xl font-bold mb-3">Patient Registration & EMR</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Unique patient IDs, full profiling, allergies and conditions, with a complete visit timeline. Clinical records are versioned, never overwritten.</p>
+                    <p class="text-slate-400 text-sm leading-relaxed">Demographics, photo, allergies and conditions under a unique Patient ID (P-######), with a full visit timeline for every patient.</p>
                 </div>
                 <div class="feature-card" data-reveal="up" style="--d:1">
-                    <span class="fc-icon"><i class="fas fa-list-ol"></i></span>
-                    <h3 class="text-xl font-bold mb-3">Appointments, Queue & Triage</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Handle scheduled and walk-in patients with queue numbers, then capture vital signs and triage priority before consultation.</p>
+                    <span class="fc-icon"><i class="fas fa-fingerprint"></i></span>
+                    <h3 class="text-xl font-bold mb-3">Thumbprint Capture</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Right and left thumbprints from a DigitalPersona or SecuGen scanner, or by image upload, with recorded consent. An exemption reason can be logged when no thumb can be captured.</p>
                 </div>
                 <div class="feature-card" data-reveal="up" style="--d:2">
-                    <span class="fc-icon"><i class="fas fa-user-doctor"></i></span>
-                    <h3 class="text-xl font-bold mb-3">Doctor Consultation</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">SOAP notes, diagnosis, lab orders, prescriptions and disposition in one screen, with allergy and drug-class cross-sensitivity checks.</p>
+                    <span class="fc-icon"><i class="fas fa-user-check"></i></span>
+                    <h3 class="text-xl font-bold mb-3">Identity Verification</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">The examining physician can match the person in front of them against the stored thumbprint, so no one else can take the exam for the applicant.</p>
                 </div>
+                <div class="feature-card" data-reveal="up" style="--d:0">
+                    <span class="fc-icon"><i class="fas fa-list-ol"></i></span>
+                    <h3 class="text-xl font-bold mb-3">Walk-in Queue & Appointments</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Walk-ins get a queue number and scheduled patients are checked in. Each exam visit gets a Visit ID (V-YYYY-######) and records the position applied for and the hiring hospital.</p>
+                </div>
+                <div class="feature-card" data-reveal="up" style="--d:1">
+                    <span class="fc-icon"><i class="fas fa-box-open"></i></span>
+                    <h3 class="text-xl font-bold mb-3">Lab Packages per Hospital</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Named sets of lab tests linked to each hiring hospital. The right package is selected automatically and sent to the laboratory in one click.</p>
+                </div>
+                <div class="feature-card" data-reveal="up" style="--d:2">
+                    <span class="fc-icon"><i class="fas fa-hospital"></i></span>
+                    <h3 class="text-xl font-bold mb-3">Multi-Facility Branding</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">The facility name, logo, address and contact are set in Settings, so any clinic or hospital can run the system under its own name.</p>
+                </div>
+            </div>
+            </section>
+            <section class="sys-section" id="laboratory-medical-exam">
+                <div class="sys-sec-head" data-reveal="up">
+                    <div>
+                        <div class="num">02 / 04</div>
+                        <h2>Laboratory & Medical Exam</h2>
+                        <p>From Specimen to Physician Findings</p>
+                    </div>
+                    <div class="sys-sec-icon"><i class="fas fa-microscope"></i></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <div class="feature-card" data-reveal="up" style="--d:0">
                     <span class="fc-icon"><i class="fas fa-vials"></i></span>
                     <h3 class="text-xl font-bold mb-3">Laboratory Workflow</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Track every request from collection and processing through verification and release, with results routed back for doctor review.</p>
+                    <p class="text-slate-400 text-sm leading-relaxed">Each request moves through Requested, Collected, Processing, For Verification and Released, then goes back to the doctor for review.</p>
                 </div>
                 <div class="feature-card" data-reveal="up" style="--d:1">
-                    <span class="fc-icon"><i class="fas fa-prescription-bottle-medical"></i></span>
-                    <h3 class="text-xl font-bold mb-3">Pharmacy & Inventory</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">FEFO dispensing, batch tracking and a 60-day expiry alarm, with smart encoding that suggests medicines and blocks duplicates.</p>
+                    <span class="fc-icon"><i class="fas fa-x-ray"></i></span>
+                    <h3 class="text-xl font-bold mb-3">Diagnostic Tests</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Chest X-ray, ECG, drug test, HBsAg, RPR and other tests have their readings recorded, verified and released like any other lab result.</p>
                 </div>
                 <div class="feature-card" data-reveal="up" style="--d:2">
-                    <span class="fc-icon"><i class="fas fa-file-invoice-dollar"></i></span>
-                    <h3 class="text-xl font-bold mb-3">Admissions & Billing</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Bed management, nursing notes and discharge, plus automatic charge posting. Switch to free-services mode for government facilities.</p>
+                    <span class="fc-icon"><i class="fas fa-heart-pulse"></i></span>
+                    <h3 class="text-xl font-bold mb-3">Vital Signs & Screening</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Vital signs with automatic BMI, plus vision and hearing tests, captured at the start of the medical exam.</p>
                 </div>
                 <div class="feature-card" data-reveal="up" style="--d:0">
-                    <span class="fc-icon"><i class="fas fa-user-shield"></i></span>
-                    <h3 class="text-xl font-bold mb-3">Role-Based Access</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Per-role and per-user module access for doctors, nurses, front desk, lab, pharmacy and billing staff.</p>
+                    <span class="fc-icon"><i class="fas fa-stethoscope"></i></span>
+                    <h3 class="text-xl font-bold mb-3">17-System Physical Exam</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">A structured head-to-toe physical examination with findings, procedures and the physician's notes in one screen.</p>
                 </div>
                 <div class="feature-card" data-reveal="up" style="--d:1">
-                    <span class="fc-icon"><i class="fas fa-clipboard-list"></i></span>
-                    <h3 class="text-xl font-bold mb-3">Audit Trail</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Every action is logged with user, time and before/after values for full accountability and compliance.</p>
+                    <span class="fc-icon"><i class="fas fa-brain"></i></span>
+                    <h3 class="text-xl font-bold mb-3">Neuro Test</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Mental status and neurological examination recorded as part of the exam, with its own fee.</p>
+                </div>
+                <div class="feature-card" data-reveal="up" style="--d:2">
+                    <span class="fc-icon"><i class="fas fa-prescription"></i></span>
+                    <h3 class="text-xl font-bold mb-3">Safe Prescribing</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Prescriptions are checked against the patient's allergies, including basic drug-class cross-sensitivity, before they are saved.</p>
+                </div>
+            </div>
+            </section>
+            <section class="sys-section" id="certification-pharmacy-billing">
+                <div class="sys-sec-head" data-reveal="up">
+                    <div>
+                        <div class="num">03 / 04</div>
+                        <h2>Certification, Pharmacy & Billing</h2>
+                        <p>Results, Medicines and Payments</p>
+                    </div>
+                    <div class="sys-sec-icon"><i class="fas fa-file-medical"></i></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="feature-card" data-reveal="up" style="--d:0">
+                    <span class="fc-icon"><i class="fas fa-clipboard-check"></i></span>
+                    <h3 class="text-xl font-bold mb-3">Fitness Classification</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">The physician assigns Class A, B, C, Pending or Unfit. Only Pending can be finalized while lab results are still out.</p>
+                </div>
+                <div class="feature-card" data-reveal="up" style="--d:1">
+                    <span class="fc-icon"><i class="fas fa-certificate"></i></span>
+                    <h3 class="text-xl font-bold mb-3">Medical Certificates</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Finalizing an exam issues a certificate number (MC-YYYY-######) and prints a certificate with the applicant's photo and thumbprint. Corrections are amendments with a reason.</p>
+                </div>
+                <div class="feature-card" data-reveal="up" style="--d:2">
+                    <span class="fc-icon"><i class="fas fa-pills"></i></span>
+                    <h3 class="text-xl font-bold mb-3">Pharmacy & Inventory</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Batch tracking and dispensing, with a red alarm for stock that expires within 60 days and one-click write-off of expired batches.</p>
+                </div>
+                <div class="feature-card" data-reveal="up" style="--d:0">
+                    <span class="fc-icon"><i class="fas fa-keyboard"></i></span>
+                    <h3 class="text-xl font-bold mb-3">Smart Medicine Encoding</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Suggests generic names, brands, strengths and suppliers encoded before, cleans up spelling, and refuses to save duplicate medicines.</p>
+                </div>
+                <div class="feature-card" data-reveal="up" style="--d:1">
+                    <span class="fc-icon"><i class="fas fa-file-invoice-dollar"></i></span>
+                    <h3 class="text-xl font-bold mb-3">Billing & Free-Services Mode</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Charges post automatically for exams, labs, medicines and procedures. Government facilities can switch to free-services mode, which hides all prices and payment screens.</p>
                 </div>
                 <div class="feature-card" data-reveal="up" style="--d:2">
                     <span class="fc-icon"><i class="fas fa-chart-pie"></i></span>
                     <h3 class="text-xl font-bold mb-3">Reports & Analytics</h3>
-                    <p class="text-slate-400 text-sm leading-relaxed">Patients served by age group, sex and barangay, plus revenue reports when billing is enabled.</p>
+                    <p class="text-slate-400 text-sm leading-relaxed">Patients served by age group, sex and barangay, applicants per lab package, and revenue reports when billing is on.</p>
+                </div>
+            </div>
+            </section>
+            <section class="sys-section" id="security-administration">
+                <div class="sys-sec-head" data-reveal="up">
+                    <div>
+                        <div class="num">04 / 04</div>
+                        <h2>Security & Administration</h2>
+                        <p>Accountable, Compliant Records</p>
+                    </div>
+                    <div class="sys-sec-icon"><i class="fas fa-user-shield"></i></div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <div class="feature-card" data-reveal="up" style="--d:0">
+                    <span class="fc-icon"><i class="fas fa-user-shield"></i></span>
+                    <h3 class="text-xl font-bold mb-3">Role-Based Access</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Module access by role for doctors, nurses, front desk, lab, pharmacy and billing, with per-user overrides that take effect on the next page load.</p>
+                </div>
+                <div class="feature-card" data-reveal="up" style="--d:1">
+                    <span class="fc-icon"><i class="fas fa-clock-rotate-left"></i></span>
+                    <h3 class="text-xl font-bold mb-3">Versioned Clinical Records</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Finalized consultations and released results are never overwritten. Every edit needs a reason and the earlier version is kept.</p>
+                </div>
+                <div class="feature-card" data-reveal="up" style="--d:2">
+                    <span class="fc-icon"><i class="fas fa-clipboard-list"></i></span>
+                    <h3 class="text-xl font-bold mb-3">Audit Trail</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Every action is logged with the user, time, record and before/after values, including thumbprint captures and verifications.</p>
+                </div>
+                <div class="feature-card" data-reveal="up" style="--d:0">
+                    <span class="fc-icon"><i class="fas fa-lock"></i></span>
+                    <h3 class="text-xl font-bold mb-3">Hardened Security</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Bcrypt passwords, account lockout, session timeout, CSRF tokens, prepared statements and protected storage for biometric images.</p>
+                </div>
+                <div class="feature-card" data-reveal="up" style="--d:1">
+                    <span class="fc-icon"><i class="fas fa-database"></i></span>
+                    <h3 class="text-xl font-bold mb-3">Backups</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">SQL backups can be downloaded from Settings at any time.</p>
+                </div>
+                <div class="feature-card" data-reveal="up" style="--d:2">
+                    <span class="fc-icon"><i class="fas fa-book"></i></span>
+                    <h3 class="text-xl font-bold mb-3">Built-in User Manual</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">An illustrated user manual that staff can open from the account menu.</p>
                 </div>
             </div>
             </section>
@@ -143,14 +260,15 @@
                     <div class="sys-stack-item" data-reveal="zoom" style="--d:0"><i class="fab fa-php"></i>PHP 8.2</div>
                     <div class="sys-stack-item" data-reveal="zoom" style="--d:1"><i class="fas fa-database"></i>MySQL / MariaDB</div>
                     <div class="sys-stack-item" data-reveal="zoom" style="--d:2"><i class="fab fa-bootstrap"></i>Bootstrap 5</div>
-                    <div class="sys-stack-item" data-reveal="zoom" style="--d:3"><i class="fas fa-lock"></i>Secure Auth</div>
+                    <div class="sys-stack-item" data-reveal="zoom" style="--d:3"><i class="fas fa-fingerprint"></i>Biometric Scanners</div>
+                    <div class="sys-stack-item" data-reveal="zoom" style="--d:4"><i class="fas fa-lock"></i>Secure Auth</div>
                 </div>
             </section>
 
             <section class="sys-cta" data-reveal="zoom">
                 <div>
                     <h2>Ready to deploy Hospital Management in your organization?</h2>
-                    <p>Book a walkthrough with our team. We'll show you the system live and talk through setup, data migration and training for your staff.</p>
+                    <p>Book a walkthrough with our team. We'll show you the full exam flow live and talk through setup, scanners, data migration and staff training.</p>
                 </div>
                 <div class="sys-cta-row">
                     <a href="mailto:buildbrightsoftwaresolution@gmail.com?subject=Demo%20Request%3A%20Hospital%20Management" class="sys-btn primary"><i class="fas fa-calendar-check"></i> Request a Demo</a>
@@ -169,13 +287,13 @@
 
             <section class="sys-related">
                 <div class="sys-related-head" data-reveal="up">
-                    <h2>Explore more business systems</h2>
+                    <h2>Explore more healthcare systems</h2>
                     <a href="index.html#projects">View all systems <i class="fas fa-arrow-right"></i></a>
                 </div>
                 <div class="sys-related-grid">
-                    <a href="crewlink.html" class="sys-rel-card" data-reveal="up" style="--d:0"><div class="ic"><i class="fas fa-ship"></i></div><h3>Crewlink Management</h3><p>CMS designed for comprehensive management of maritime and industrial crew links.</p><span>Learn more <i class="fas fa-arrow-right"></i></span></a>
-                    <a href="hoa.html" class="sys-rel-card" data-reveal="up" style="--d:1"><div class="ic"><i class="fas fa-home"></i></div><h3>HOA Management</h3><p>Home Owners Association system for billing, resident records, and property management.</p><span>Learn more <i class="fas fa-arrow-right"></i></span></a>
-                    <a href="website-development.html" class="sys-rel-card" data-reveal="up" style="--d:2"><div class="ic"><i class="fas fa-globe"></i></div><h3>Web Development</h3><p>Custom-built corporate and e-commerce websites with modern responsive design.</p><span>Learn more <i class="fas fa-arrow-right"></i></span></a>
+                    <a href="e-mass.html" class="sys-rel-card" data-reveal="up" style="--d:0"><div class="ic"><i class="fas fa-hospital-user"></i></div><h3>E-MASS</h3><p>Electronic Medical Appointment Scheduling System for streamlined healthcare booking.</p><span>Learn more <i class="fas fa-arrow-right"></i></span></a>
+                    <a href="pharmacy-pos.html" class="sys-rel-card" data-reveal="up" style="--d:1"><div class="ic"><i class="fas fa-pills"></i></div><h3>Pharmacy POS & Inventory</h3><p>Point of sale and inventory for pharmacies with stock and expiry tracking.</p><span>Learn more <i class="fas fa-arrow-right"></i></span></a>
+                    <a href="cdrrmc.html" class="sys-rel-card" data-reveal="up" style="--d:2"><div class="ic"><i class="fas fa-truck-medical"></i></div><h3>CDRRMC Emergency Command</h3><p>Emergency response and disaster command system with SOS, auto-dispatch and live tracking.</p><span>Learn more <i class="fas fa-arrow-right"></i></span></a>
                 </div>
             </section>
         </div>
@@ -205,6 +323,7 @@
                         <li><a href="business-permit.html">Business Permit & Licensing System</a></li>
                         <li><a href="cswd-beneficiaries.html">CSWD Beneficiaries Management</a></li>
                         <li><a href="civil-registry.html">Civil Registry Online System</a></li>
+                        <li><a href="cdrrmc.html">CDRRMC Emergency Command</a></li>
                     </ul>
                 </div>
                 <div>
